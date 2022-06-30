@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>B' Academy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8ad5cf4f0f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <link rel="stylesheet" href="../css/style.css"> <!--main css-->
+    <link rel="stylesheet" href="../htmlPage/css/style.css"> <!--htmlPage css-->
+
+</head>
+
+<body>
+    <!-- Header -->
+
+    <head>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-blue fixed-top">
+                <div class="container ">
+                    <a class="navbar-brand" href="../index.html" style="font-size: 30px;"></i> B' Academy </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav m-auto p-3">
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Learn
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="../htmlPage/index.html">HTML</a></li>
+                                    <li><a class="dropdown-item " href="#">CSS</a></li>
+                                    <li><a class="dropdown-item " href="#">Javascript</a></li>
+                                    <li><a class="dropdown-item " href="#">Bootstrap</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" aria-current="page" href="#">Mentorship</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="../editor/index.html">Editor</a>
+                            </li>
+                        </ul>
+
+                        <hr />
+                        <div class="d-grid gap-2 d-flex justify-content-center align-items-center mb-3">
+                            <a class="btn btn-0">Ask Developers</a>
+                            <a class="btn btn-1">Log in</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </head>
+
+    <section class="showcase container-fluid">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 text-center text-md-start pb-5 mb-5 ms-md-5">
+                    <p class="lead">Learning Progress</p>
+                    <h1><strong class="text-red">Common CSS Properties</strong></h1>
+
+                    <a href="" class="btn btn-3 mt-5"> Continue where you left <span class="ms-2"><i
+                                class="fa-solid fa-arrow-right text-red"></i></span></a>
+                </div>
+                <div class="col-sm-12 col-md-4 d-flex  justify-content-center" id="progress">
+                    <div role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="--value:0"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="main-content-container">
+        <div class="container-fluid ">
+            <div class="row ">
+                <div class="col-md-3 sidebar">
+                    <p class="lead mt-3 text-center"><i class="fa-brands fa-css3-alt learn-icon learn-icon-css"></i></p>
+                    <ul id="menu-container">
+                        <li class="li-active" onclick="menuClick(this)">CSS Intro <span></span><span class="float-end"><i class="fa-solid fa-circle-check li-icon"></i></span></li>
+                        <li class="li-normal" onclick="menuClick(this)">CSS Elements <span></span><span class="float-end"><i class="fa-solid fa-circle-check li-icon"></i></span></li>
+                        <li class="li-normal" onclick="menuClick(this)">CSS Attributes <span></span><span class="float-end"><i class="fa-solid fa-circle-check li-icon"></i></span></li>
+                        <li class="li-normal" onclick="menuClick(this)">CSS <code>Comment</code> <span class="float-end"><i class="fa-solid fa-circle-check li-icon"></i></span></li>
+                        <li class="li-normal" onclick="menuClick(this)">CSS <code>Style</code> <span class="float-end"><i class="fa-solid fa-circle-check li-icon"></i></span></li>
+                        <li class="li-normal" onclick="menuClick(this)">CSS <code>Color</code> <span class="float-end"><i class="fa-solid fa-circle-check li-icon"></i></span></li>
+                        <li class="li-normal" onclick="menuClick(this)">CSS <code>Link</code> <span class="float-end"><i class="fa-solid fa-circle-check li-icon"></i></span></li>
+                        <li class="li-normal" onclick="menuClick(this)">CSS <code>Audio</code> <span class="float-end"><i class="fa-solid fa-circle-check li-icon"></i></span></li>
+                        <li class="li-normal" onclick="menuClick(this)">CSS <code>Break</code> <span class="float-end"><i class="fa-solid fa-circle-check li-icon"></i></span></li>
+                        <li class="li-normal" onclick="menuClick(this)">CSS <code>Blockquote</code> <span class="float-end"><i class="fa-solid fa-circle-check li-icon"></i></span></li>
+                        <li class="li-normal" onclick="menuClick(this)">CSS <code>Code</code> <span class="float-end"><i class="fa-solid fa-circle-check li-icon"></i></span></li>
+                        <li class="li-normal" onclick="menuClick(this)">CSS <code>Div</code> <span class="float-end"><i class="fa-solid fa-circle-check li-icon"></i></span></li>
+                        <li class="li-normal" onclick="menuClick(this)">CSS <code>Form</code> <span class="float-end"><i class="fa-solid fa-circle-check li-icon"></i></span></li>
+                        <li class="li-normal" onclick="menuClick(this)">CSS <code>Heading</code> <span class="float-end"><i class="fa-solid fa-circle-check li-icon"></i></span></li>
+                        <li class="li-normal" onclick="menuClick(this)">CSS <code>Iframe</code> <span class="float-end"><i class="fa-solid fa-circle-check li-icon"></i></span></li>
+                        <li class="li-normal" onclick="menuClick(this)">CSS <code>Images</code> <span class="float-end"><i class="fa-solid fa-circle-check li-icon"></i></span></li>
+                        <li class="li-normal" onclick="menuClick(this)">CSS <code>Input</code> <span class="float-end"><i class="fa-solid fa-circle-check li-icon"></i></span></li>
+                        <li class="li-normal" onclick="menuClick(this)">CSS <code>External src</code> <span class="float-end"><i class="fa-solid fa-circle-check li-icon"></i></span></li>
+                        <li class="li-normal" onclick="menuClick(this)">CSS <code>Paragraph</code> <span class="float-end"><i class="fa-solid fa-circle-check li-icon"></i></span></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-9 px-5 py-5">
+                    <div class="content" id="main-content">
+                        <span class="d-none">
+                        <h1><strong>What is <span class="text-red">CSS</span> ?</strong></h1>
+                        <p class="p-content">
+                            <br><br>CSS stands for Cascading Stylesheet
+                            <br><br>CSS describes the presentation of the web pages.
+                            <br><br>CSS describes how elements rendered on the screen.
+                            <br><br><h2><strong>Why Use <span class="text-red">CSS</span> ?</strong></h2>
+                            <br>CSS defines style of your web pages including design, layout and variation in display across devices.
+                            <br><br>CSS can save you a lot of work. An external stylesheet saved as .css can be used to style multiple web pages all at once.
+                            <br><br><span class="lead">Example </span>
+                        </p>
+                        <pre class="code"><code class="prettyprint" id="code">&lt;!DOCTYPE html&gt;<span onclick="_initDocuments('html-m1', '', '', 'result'); editToggle('textArea', 'code');"><i class="fa-solid fa-pen float-end edit-icon"></i></span>
+&lt;style&gt;
+    body{
+        background-color: white;
+    }
+    .sample-button{
+        background-color: lightblue;
+        border: 1px solid black
+    }
+&lt;/style&gt;
+&lt;button class="sample-button"&gt;sample&lt;/button&gt;</code></pre>
+                        <p>
+                            <span class="lead">Output </span>
+                        </p>
+
+                        <!-- result -->
+                        <div class="code-container">
+                            <div id="textArea" class="d-none mb-3">
+                                <textarea name="" id="html-m1" cols="30" rows="5" 
+                                class="form-control code-textarea" oninput="reload(); sync_scroll(this);" 
+                                onkeydown="check_tab(this, event);"></textarea>
+                            </div>
+                            <div class="result">
+                                <div class="">
+                                   <style>
+                                        body{
+                                            background-color: white;
+                                        }
+                                        .sample-button{
+                                            background-color: lightblue;
+                                            border: 1px solid black
+                                        }
+                                   </style>
+                                   <button class="sample-button">sample</button>
+                                </div>
+                                <iframe id="result" class="d-none"></iframe>
+                            </div>
+                        </div>
+
+
+                        <p class="p-content">
+                            <br>
+                            <code class="prettyprint code-tag">&lt;!DOCTYPE html&gt;</code> tag defines the document type that the browser is going to render. This is used for legacy reasons. If you want to get to the latest version of HTML (HTML5) then it's recommended to use this tag.
+                            <br>
+                            <br>
+                            <code class="prettyprint code-tag">&lt;html&gt;</code> this is  element encloses everything inside of an html document; it includes tags, elements, style sheets, scripts, text, multimedia and a lot more.
+                            <br>
+                            <br>
+                            <code class="prettyprint code-tag">&lt;head&gt;</code> this element encloses the metadata of a document which will not be displayed on the main content of a web page; this includes <code class="prettyprint code-tag">&lt;style&gt;</code>, <code class="prettyprint code-tag">&lt;script&gt;</code>, 
+                            <code class="prettyprint code-tag">&lt;title&gt;</code>, <code class="prettyprint code-tag">&lt;meta&gt;</code> tags and a lot more.
+                            <br>
+                            <br>
+                            <code class="prettyprint code-tag">&lt;title&gt;</code> defines the title of a webpage.
+                            <br>
+                            <br>
+                            <code class="prettyprint code-tag">&lt;body&gt;</code> defines the document's body and encloses elements like <code class="prettyprint code-tag">&lt;h1&gt;</code>, <code class="prettyprint code-tag">&lt;p&gt;</code>,
+                            <code class="prettyprint code-tag">&lt;img&gt;</code> and a lot more.
+                            <br>
+                            <br>
+                            <code class="prettyprint code-tag">&lt;h1&gt;</code> defines a heading
+                            <br>
+                            <br>
+                            <code class="prettyprint code-tag">&lt;p&gt;</code> element defines a "paragraph", a block of text that has a small amount of spacing in between its top and bottom.
+                        </p>
+                        <h2 class="mt-5"><strong>HTML <span class="text-red">Tags</span></strong></h2>
+                        <p class="p-content">
+                            <br>
+                            HTML Tags are element name surrounded by angle brackets
+                            <br>
+                            <br>
+                            <code class="prettyprint code-tag">&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>
+                            <br>
+                            <br>
+                            <code class="prettyprint code-tag">&lt;p&gt;</code> is an example of start tag or opening tag
+                            <br>
+                            <code class="prettyprint code-tag">&lt;/p&gt;</code> is an example of end tag or ending tag
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <span>
+                                Now that we know the basic structure of an HTML page, let's proceed to the next topic.
+                            </span>
+                        </p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <a onclick="next(this)" class="btn btn-3 mt-5"><span class=""><i
+                                class="fa-solid fa-arrow-right text-red"></i></span></a>
+                        </div>
+                        </span>
+                        <span class="d-none">
+                            <h1><strong>HTML <span class="text-red">Elements</span></strong></h1>
+                            <p class="p-content">
+                                <br>
+                                <br>
+                                We have studied about tags and things like start tag and and end tag in the previous topic.
+                                <br>
+                                <br>
+                                An HTML element is usually composed of a &lt;<strong>Start tag</strong>&gt; " <strong>Content</strong> " &lt;/ <strong>End tag</strong> &gt;
+                                <br>  
+                                <br>
+                                <span class="lead">Example</span>
+                                <br>
+                                <pre class="code"><code class="prettyprint">&lt;p&gt;This is a paragraph.&lt;/p&gt;
+                                </code></pre>
+                                <p>
+                                    <span class="lead">Output </span>
+                                </p>
+                                <!-- result -->
+                                <div class="code-container">
+                                    <div class="result">
+                                        <div class="">
+                                            <p>This is a paragraph</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                Above example is composed of the following:
+                                <br>
+                                <br>
+                                <code class="prettyprint code-tag">&lt;p&gt;</code> - an start tag
+                                <br>
+                                <span>This is a paragraph</span>. - a html content.
+                                <br>
+                                <code class="prettyprint code-tag">&lt;/p&gt;</code> - an end tag
+                                <br>
+                                <br>
+                                <span class="lead">Another Example </span>
+                                <br>
+                                <br>
+                                <pre class="code"><code class="prettyprint">&lt;h1&gt;Hello world.&lt;/p&gt;</code></pre>
+                                <p>
+                                    <span class="lead">Output </span>
+                                </p>
+                                <!-- result -->
+                                <div class="code-container">
+                                    <div class="result">
+                                        <div class="">
+                                            <h1>Hello Word</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                Above example is composed of the following:
+                                <br>
+                                <br>
+                                <code class="prettyprint code-tag">&lt;h1&gt;</code> - an start tag
+                                <br>
+                                <span>Hello World</span>. - a html content.
+                                <br>
+                                <code class="prettyprint code-tag">&lt;/h1&gt;</code> - an end tag
+                                <br>
+                                <br>
+
+                                <span>HTML tags are not only limited to <code class="prettyprint code-tag">&lt;/p&gt;</code> and <code class="prettyprint code-tag">&lt;/h1&gt;</code>
+                                You will be learning more on the upcoming lessons.
+                                </span>
+
+                                <br>
+                                <br>
+                                <br>
+                            </p>
+                            <h2><strong>Nested HTML <span class="text-red">Elements</span></strong></h2>
+                            <br>
+                            <p class="p-content">
+                                HTML element can contain one or more HTML elements.
+                                <br>
+                                <br>
+                                <span class="lead">Example </span>
+                            </p>
+                            <pre class="code"><code class="prettyprint " >&lt;p&gt;&lt;strong&gt; Strong Text&lt;/strong&gt;&lt;/p&gt;</code></pre>
+                            <p class="p-content">
+                                <span class="lead">Output </span>
+                            </p>
+    
+                            <!-- result -->
+                            <div class="code-container">
+                                <div class="result">
+                                    <div class="">
+                                        <p><strong>Strong Text</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <p class="p-content">
+                                On the above example, there two start tags and two end tags.
+                                <br>
+                                The second tag <code class="prettyprint code-tag" >&lt;strong&gt;</code> adding a font weight to the text within.
+                            </p>
+                            <h2 class="mt-5"><strong>Empty <span class="text-red">Elements</span></strong></h2>
+                            <p class="p-content">
+                                <br>
+                                Elements that do not have an element content and end tag like;
+                                <br>
+                                <code class="prettyprint code-tag" >&lt;meta /&gt;</code>, 
+                                <code class="prettyprint code-tag" >&lt;link /&gt;</code>, 
+                                <code class="prettyprint code-tag" >&lt;img /&gt;</code>, 
+                                <code class="prettyprint code-tag" >&lt;br /&gt;</code>, 
+                                <code class="prettyprint code-tag" >&lt;hr /&gt;</code>, 
+                                <code class="prettyprint code-tag" >&lt;input /&gt;</code>
+                                <br>
+                                <br>
+                                <span>The best in Empty Elements is to always to put a '/' before the '&gt;'. </span>
+                            </p>
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <a onclick="prev(this)" class="btn btn-3 mt-5"><span class=""><i class="fa-solid fa-arrow-left-long text-red"></i>
+                                </span> </a>
+                                <a onclick="next(this)" class="btn btn-3 mt-5">  <span class=""><i
+                                    class="fa-solid fa-arrow-right text-red"></i></span></a>
+                            </div>
+                        </span>
+                        <span class="d-none">
+                            <h1><strong>HTML <span class="text-red">Attributes</span></strong></h1>
+                            <p class="p-content">
+                                <br><br>
+                                HTML Attributes are used to add more information to an HTML Element.
+                                <br><br>
+                                <span class="lead text-red"><strong>Important to remember</strong></span>
+                                <br><strong>Attributes are found in HTML Tags</strong>
+                                <br><strong>Attributes only appear at start tags. It will never be on end tags.</strong>
+                                <br><strong>HTML Elements can have multiple attributes.</strong>
+                                <br><br>
+                                <span class="lead">
+                                    An HTML attribute is composed of:
+                                </span>
+                                <br><br>Attribute name/value pairs
+                                <br>It look like this : <code class="prettyprint code-tag">Name = "value"</code>
+                                <br><br>You can also use single quotation depending on the situation especially when the value contains double quotes.
+                                <br>In this lesson we are going to learn some HTML attributes with examples.
+                                <br><br><br>
+                                <span class="lead">Example <code class="code-tag">href</code> attribute</span>
+                                <br>
+                                <pre class="code"><code class="prettyprint" id="code-m2">&lt;a href=&quot;https://www.google.com/&quot; &gt;Example tag with attribute&lt;/a&gt;</code><span onclick="_initDocuments('html-m2', '', '', 'result-m2'); editToggle('textArea-m2', 'code-m2', 'result-m2');">button<i class="fa-solid fa-pen float-end edit-icon"></i></span></pre>
+                                <p>
+                                    <span class="lead">Output </span>
+                                </p>
+
+                                <!-- result -->
+                                <div class="code-container">
+                                    <div id="textArea-m2" class="d-none mb-3">
+                                        <textarea name="" id="html-m2" cols="30" rows="5" 
+                                        class="form-control code-textarea" oninput="reload(); sync_scroll(this);" 
+                                        onkeydown="check_tab(this, event);"></textarea>
+                                    </div>
+                                    <div class="result">
+                                        <div class="">
+                                            <a href="https://www.google.com/">Example tag with attribute</a>
+                                        </div>
+                                        <iframe id="result-m2" class="d-none"></iframe>
+                                    </div>
+                                </div>
+                                
+                                <br>
+                                Links are defined using the <code class="prettyprint code-tag">&lt;a&gt;</code> tag.
+                                <br><br>
+                                On the example above we used the <code class="code-tag">href</code>
+                                attribute to tell the browser where to go.
+                                <br>
+                                <br>
+                                <p>
+                                    <span class="lead">Example <code class="code-tag">title</code> attribute</span>
+                                </p>
+                                <pre class="code"><code class="prettyprint" id="code-m3">&lt;a href&equals;&quot;https://www.google.com/&quot; title&equals;&quot;I am a title attribute&quot; &gt;Hover me&lt;/a&gt;</code><span onclick="_initDocuments('html-m3', '', '', 'result-m3'); editToggle('textArea-m3', 'code-m3', 'result-m3');">button<i class="fa-solid fa-pen float-end edit-icon"></i></span></pre>
+                                <p>
+                                    <span class="lead">Output </span>
+                                </p>
+
+                                <!-- result -->
+                                <div class="code-container">
+                                    <div id="textArea-m3" class="d-none mb-3">
+                                        <textarea name="" id="html-m3" cols="30" rows="5" 
+                                        class="form-control code-textarea" oninput="reload(); sync_scroll(this);" 
+                                        onkeydown="check_tab(this, event);"></textarea>
+                                    </div>
+                                    <div class="result">
+                                        <div class="">
+                                            <a href="https://www.google.com/" title="I am a title attribute">Hover me</a>
+                                        </div>
+                                        <iframe id="result-m3" class="d-none"></iframe>
+                                    </div>
+                                </div>
+
+                                <br>
+                                The <code class="code-tag">title</code>
+                                attribute serve as a tooltip for HTML Element.
+                                <br>
+                                <br>
+                            </p>
+                            <h2><strong>Here's a list of <span class="text-red">Attributes</span> that we will be using</strong></h2>
+                            <br>
+                            <p class="p-content">
+                                list of attributes
+                                <br>
+                                <br>
+                            </p>
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <a onclick="prev(this)" class="btn btn-3 mt-5"><span class=""><i class="fa-solid fa-arrow-left-long text-red"></i>
+                                </span> </a>
+                                <a onclick="next(this)" class="btn btn-3 mt-5">  <span class=""><i
+                                    class="fa-solid fa-arrow-right text-red"></i></span></a>
+                            </div>
+                        </span>
+                        <span class="d-none">
+                            <h1><strong>HTML <span class="text-red">Comments</span></strong></h1>
+                            <p class="p-content">
+                                <br><br> HTML Comments are text, phrase or sentences inside an HTML file.
+                                <br><br>They are only shown in the codes and not rendered by a browser.
+                                <br><br>HTML comments both help beginners and experienced developers to easily organized their codes
+                                <br><br><h2><strong>How to write HTML <span class="text-red">Comments?</span></strong></h2>
+                                <br>HTML Comment starts with <code class="code-tag">&lt;!&dash;&dash;</code> and ends with <code class="code-tag">&dash;&dash;&gt;</code>
+                                <br><br>It look like this : <code class="prettyprint code-tag">&lt;!&dash;&dash; your comment &dash;&dash;&gt;</code>
+                                <br><br><p class="lead">Example</p>
+                                <pre class="code"><code class="prettyprint" id="code-m4"><span onclick="_initDocuments('html-m4', '', '', 'result-m4'); editToggle('textArea-m4', 'code-m4', 'result-m4');"><i class="fa-solid fa-pen float-end edit-icon"></i></span>
+ &lt;p&gt;You can see me in you browser&lt;/p&gt;
+ &lt;!&dash;&dash; This is a comment and you can&rsquo;t see me in your browser &dash;&dash;&gt;
+ <br>
+ &lt;p&gt;Mult-line comment&lt;/p&gt;
+ &lt;!&dash;&dash; This is a multi-line comment 
+ some comment go here 
+ some comment go here .. &dash;&dash;&gt;
+                                </code></pre>
+                                <p>
+                                    <span class="lead">Output </span>
+                                </p>
+
+                                <!-- result -->
+                                <div class="code-container">
+                                    <div id="textArea-m4" class="d-none mb-3">
+                                        <textarea name="" id="html-m4" cols="30" rows="5" 
+                                        class="form-control code-textarea" oninput="reload(); sync_scroll(this);" 
+                                        onkeydown="check_tab(this, event);"></textarea>
+                                    </div>
+                                    <div class="result">
+                                        <div class="">
+                                            <p>You can see me in you browser</p>
+                                        </div>
+                                        <iframe id="result-m4" class="d-none"></iframe>
+                                    </div>
+                                </div>
+                                
+                                <br>
+                                On the above example, you have learned that you can make single and multi line comment
+                                <br>
+                                <br>
+                            </p>
+
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <a onclick="prev(this)" class="btn btn-3 mt-5"><span class=""><i class="fa-solid fa-arrow-left-long text-red"></i>
+                                </span> </a>
+                                <a onclick="next(this)" class="btn btn-3 mt-5">  <span class=""><i
+                                    class="fa-solid fa-arrow-right text-red"></i></span></a>
+                            </div>
+                        </span>
+                        <span class="d-none">
+                            <h1><strong>HTML <span class="text-red">Style</span></strong></h1>
+                            <p class="p-content">
+                                <br><br> HTML Styles are used to style /design HTMl element it means changing the default values.
+                                <br><br> Add styles to an element, such as color, font, size, and more.
+                                <br><br><h2><strong>Internal <span class="text-red">Style</span></strong></h2>
+                                <br>Internal Style is composed of one or more CSS rule set.
+                                <br><br>A CSS rule set consists of a selector,  a property and a value surrounded by curly braces.
+                                <br><br><p class="lead">Syntax</p>
+                                <pre class="code"><code class="prettyprint">&lt;style&gt;
+    selector {
+         property &colon; value
+    }
+ &lt;/style&gt;</code></pre>
+                                <p class="p-content">
+                                    Internal Style is included inside <code class="code-tag"> &lt;head&gt;</code> tag.
+                                </p><br><h2><strong>Inline <span class="text-red">Style</span></strong></h2>
+                                <br>Inline style is used to style elements using the <code class="code-tag">stye</code> attribute.
+                                <br><br><p class="lead">Syntax</p>
+                                <pre class="code"><code class="prettyprint">&lt;p style&equals;&quot;property&colon;value&quot;&gt;&lt;/p&gt;</code></pre>
+                                <br><p><span class="lead">Example <code class="code-tag">background</code>and <code class="code-tag">color</code> property</span></p>
+                                <pre class="code"><code class="prettyprint" id="code-m5"><span onclick="_initDocuments('html-m5', '', '', 'result-m5'); editToggle('textArea-m5', 'code-m5', 'result-m5');"><i class="fa-solid fa-pen float-end edit-icon"></i></span>
+&lt;p style&equals;&quot;background-color:blue; color:white&quot;&gt; I am blue&lt;/p&gt;
+&lt;p style&equals;&quot;background-color:green; color:white&quot;&gt; I am green&lt;/p&gt;
+&lt;p style&equals;&quot;background-color:red; color:white&quot;&gt; I am red&lt;/p&gt;
+                                </code></pre>
+                            </p>
+                            <p>
+                                <span class="lead">Output </span>
+                            </p>
+
+                            <!-- result -->
+                            <div class="code-container">
+                                <div id="textArea-m5" class="d-none mb-3">
+                                    <textarea name="" id="html-m5" cols="30" rows="5" 
+                                    class="form-control code-textarea" oninput="reload(); sync_scroll(this);" 
+                                    onkeydown="check_tab(this, event);"></textarea>
+                                </div>
+                                <div class="result">
+                                    <div class="">
+                                        <p style="background-color: blue; color: white">I am blue</p>
+                                        <p style="background-color: green; color: white">I am green</p>
+                                        <p style="background-color: red; color: white">I am red</p>
+                                    </div>
+                                    <iframe id="result-m5" class="d-none"></iframe>
+                                </div>
+                            </div>
+                            <br><br><p><span class="lead">Example <code class="code-tag">font-size</code> attribute</p>
+                                <pre class="code"><code class="prettyprint" id="code-m6"><span onclick="_initDocuments('html-m6', '', '', 'result-m6'); editToggle('textArea-m6', 'code-m6', 'result-m6');"><i class="fa-solid fa-pen float-end edit-icon"></i></span>
+&lt;p style&equals;&quot;font-size:15px;&quot;&gt; I am 15 pixels in size&lt;/p&gt;
+&lt;p style&equals;&quot;font-size:30px;&quot;&gt; I am 30 pixels in size&lt;/p&gt;</code></pre>
+                            </p>
+                            <p>
+                                <span class="lead">Output </span>
+                            </p>
+
+                            <!-- result -->
+                            <div class="code-container">
+                                <div id="textArea-m6" class="d-none mb-3">
+                                    <textarea name="" id="html-m6" cols="30" rows="5" 
+                                    class="form-control code-textarea" oninput="reload(); sync_scroll(this);" 
+                                    onkeydown="check_tab(this, event);"></textarea>
+                                </div>
+                                <div class="result">
+                                    <div class="">
+                                        <p style="font-size: 15px;">I am 15 pixels in size</p>
+                                        <p style="font-size: 30px;">I am 30 pixels in size</p>
+                                    </div>
+                                    <iframe id="result-m6" class="d-none"></iframe>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <a onclick="prev(this)" class="btn btn-3 mt-5"><span class=""><i class="fa-solid fa-arrow-left-long text-red"></i>
+                                </span> </a>
+                                <a onclick="next(this)" class="btn btn-3 mt-5">  <span class=""><i
+                                    class="fa-solid fa-arrow-right text-red"></i></span></a>
+                            </div>
+                        </span>
+                        <span class="d-none">
+                            <h1><strong>HTML <span class="text-red">Colors</span></strong></h1>
+                            <p class="p-content">
+                                <br><br> HTML Colors define colors that we see on a web.
+                                <br><br> In this topic we will use inline style with CSS property <code class="code-tag">color</code> to change the text color of a HTML elements.
+                                <br><br><strong>Color Name</strong> - defines any valid color by its color name.
+                                <br><strong>Hex Color</strong> - defines any valid color by a hash followed by letters and/or numbers.
+                                <br><strong>RGB Color</strong> - defines any valid color by this format <i>rgb(number, number, number)</i>
+                                <br>RGB stands for Red, Green and Blue.
+                                <br><p><span class="lead">Example</span></p>
+                                <pre class="code"><code class="prettyprint" id="code-m7"><span onclick="_initDocuments('html-m7', '', '', 'result-m7'); editToggle('textArea-m7', 'code-m7', 'result-m7');"><i class="fa-solid fa-pen float-end edit-icon"></i></span>
+&lt;p style&equals;&quot; color &colon; green; &quot;&gt; I use Color Name to change my text color&lt;/p&gt;
+&lt;p style&equals;&quot; color &colon; #4DCF08&quot;&gt; I use Hex Color value to change my text color&lt;/p&gt;
+&lt;p style&equals;&quot; color &colon; rgb(77, 207, 8)&quot;&gt; I use RGB Color value to change my text color&lt;/p&gt;
+                                </code></pre>
+                            </p>
+                            <p>
+                                <span class="lead">Output </span>
+                            </p>
+
+                            <!-- result -->
+                            <div class="code-container">
+                                <div id="textArea-m7" class="d-none mb-3">
+                                    <textarea name="" id="html-m7" cols="30" rows="5" 
+                                    class="form-control code-textarea" oninput="reload(); sync_scroll(this);" 
+                                    onkeydown="check_tab(this, event);"></textarea>
+                                </div>
+                                <div class="result">
+                                    <div class="">
+                                        <p style="color: green">I use Color Name to change my text color</p>
+                                        <p style="color: #4DCF08">I use Hex Color value to change my text color</p>
+                                        <p style="color: rgb(77, 207, 8)">I use RGB Color value to change my text color</p>
+                                    </div>
+                                    <iframe id="result-m7" class="d-none"></iframe>
+                                </div>
+                            </div>
+
+
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <a onclick="prev(this)" class="btn btn-3 mt-5"><span class=""><i class="fa-solid fa-arrow-left-long text-red"></i>
+                                </span> </a>
+                                <a onclick="next(this)" class="btn btn-3 mt-5">  <span class=""><i
+                                    class="fa-solid fa-arrow-right text-red"></i></span></a>
+                            </div>
+                        </span>
+                        <span class="d-none">
+                            <h1><strong>HTML <span class="text-red">Links</span></strong></h1>
+                            <p class="p-content">
+                                <br><br> HTML Links are very necessary for all web pages.
+                                <br><br> All website have links. HTML Links are also called hyperlinks.
+                                <br><br> HTML Links help users jump from their current web page location to another.
+                                <br><br> To make an actual link using the <code class="prettyprint code-tag">&lt;a&gt;</code> tag, use the href attribute.
+                                <br><br> It look link this : <code class="prettyprint code-tag">&lt;a href&equals;&quot;index.html&quot;&gt;Link&lt;/a&gt;</code>
+                                <br><br><h2><strong>Internal / Relative <span class="text-red">Links</span></strong></h2>
+                                <br><br>Linking inside same directory.
+                                <br><br> It look link this : <code class="prettyprint code-tag">&lt;a href&equals;&quot;file_in_the_same_folder.html&quot;&gt;Link&lt;/a&gt;</code>
+                                <br><br><br><h2><strong>External / Absolute <span class="text-red">Links</span></strong></h2>
+                                <br>Linking outside directory
+                                <br><br> It look link this : <code class="prettyprint code-tag">&lt;a href&equals;&quot;../editor/index.html&quot;&gt;B&rsquo; Academy editor&lt;/a&gt;</code>
+                                <br><br> or : <code class="prettyprint code-tag">&lt;a href&equals;&quot;https://www.google.com&quot;&gt;Go to google&lt;/a&gt;</code>
+                                <br><br><br><span class="lead">Link <code class="code-tag">target</code> attribute</span>
+                                <br><br>The <code class="code-tag">target</code> attribute specifies where to open the linked document.
+                                <br><br><code class="code-tag">_self</code> Default. Opens the document in the same window/tab as it was clicked.
+                                <br><br><code class="code-tag">_blank</code> Opens the document in a new window or tab.
+                                <br><br><code class="code-tag">_parent</code> Opens the document in the parent frame.
+                                <br><br><code class="code-tag">_top</code> Opens the document in the full body of the window.
+                                <br><br><br><p><span class="lead">Example</span></p>
+                                <pre class="code"><code class="prettyprint" id="code-m8"><span onclick="_initDocuments('html-m8', '', '', 'result-m8'); editToggle('textArea-m8', 'code-m8', 'result-m8');"><i class="fa-solid fa-pen float-end edit-icon"></i></span>
+&lt;a href&equals;&quot;../editor/index.html&quot; &gt;B' Academy editor&lt;/a&gt;&lt;br&gt;
+&lt;a href&equals;&quot;https://www.google.com&quot; target&equals;&quot;_blank&quot; &gt;Go to google&lt;/a&gt;
+                                </code></pre>
+                            </p>
+                            <p>
+                                <span class="lead">Output </span>
+                            </p>
+
+                            <!-- result -->
+                            <div class="code-container">
+                                <div id="textArea-m8" class="d-none mb-3">
+                                    <textarea name="" id="html-m8" cols="30" rows="5" 
+                                    class="form-control code-textarea" oninput="reload(); sync_scroll(this);" 
+                                    onkeydown="check_tab(this, event);"></textarea>
+                                </div>
+                                <div class="result">
+                                    <div class="">
+                                        <p><a href="../editor/index.html">B' Academy editor</a></p>
+                                        <p><a href="https://www.google.com">Go to google</a></p>
+                                    </div>
+                                    <iframe id="result-m8" class="d-none"></iframe>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <a onclick="prev(this)" class="btn btn-3 mt-5"><span class=""><i class="fa-solid fa-arrow-left-long text-red"></i>
+                                </span> </a>
+                                <a onclick="next(this)" class="btn btn-3 mt-5">  <span class=""><i
+                                    class="fa-solid fa-arrow-right text-red"></i></span></a>
+                            </div>
+                        </span>
+                        <span class="d-none">
+                            <h1><strong>HTML <span class="text-red">Audio </span></strong></h1>
+                            <p class="p-content">
+                                <br><br> To embed audios in HTML we have to use the <code class="code-tag">&lt;audio&gt;</code> tag with its attribute <code class="code-tag">src</code>
+                                or the <code class="code-tag">&lt;source&gt;</code> tag with its <code class="code-tag">src</code> attribute.
+                                <br><br>The <code class="cde-tag">controls</code> attribute adds audio controls, like play, pause, and volume.
+                                <br><br>The <code class="cde-tag">autoplay</code> attribute start an audio file automatically.
+                                <br><br>The <code class="cde-tag">muted</code> attribute start audio file but muted.
+                                <br><br>The <code class="cde-tag">loop</code> attribute will start audio over and over again in an endless loop.
+                                <br><br>There are three supported audio formats: MP3, WAV, and OGG
+                                <br><br>The <code class="code-tag">muted</code>, <code class="code-tag">loop</code>, <code class="code-tag">controls</code> and <code class="code-tag">autoplay</code>
+                                are boolean they don't need values.
+                                <br><br><p><span class="lead">Example</span></p>
+                                <pre class="code"><code class="prettyprint" id="">
+&lt;audio src&equals;&quot;./audio/sample3.ogg&quot; controls &gt;&lt;/audio&gt;
+ </code></pre>
+                            </p>
+                            <p>
+                                <span class="lead">Output </span>
+                            </p>
+                            <!-- result -->
+                            <div class="code-container">
+                                <div id="" class="d-none mb-3">
+                                    <textarea name="" id="" cols="30" rows="5" 
+                                    class="form-control code-textarea" oninput="reload(); sync_scroll(this);" 
+                                    onkeydown="check_tab(this, event);"></textarea>
+                                </div>
+                                <div class="result">
+                                    <div class="">
+                                       <audio src="./audio/sample3.ogg" controls></audio>
+                                       
+                                    </div>
+                                    <iframe id="" class="d-none"></iframe>
+                                </div>
+                            </div>
+                            <br>
+                            
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <a onclick="prev(this)" class="btn btn-3 mt-5"><span class=""><i class="fa-solid fa-arrow-left-long text-red"></i>
+                                </span> </a>
+                                <a onclick="next(this)" class="btn btn-3 mt-5">  <span class=""><i
+                                    class="fa-solid fa-arrow-right text-red"></i></span></a>
+                            </div>
+                        </span>
+                        <span class="d-none">
+                            <h1><strong>HTML Line <span class="text-red">Break </span></strong></h1>
+                            <p class="p-content">
+                                <br><br> HTML Line Break produces a line break in a text. It is an empty element.
+                                <br><br> <code class="code-tag">&lt;br /&gt;</code> tag defines an HTML Line Break.
+                                <br><br><br><p><span class="lead">Example</span></p>
+                                <pre class="code"><code class="" id="code-m9"><span onclick="_initDocuments('html-m9', '', '', 'result-m9'); editToggle('textArea-m9', 'code-m9', 'result-m9');"><i class="fa-solid fa-pen float-end edit-icon"></i></span>First line with line break&lt;br /&gt; Second line with line break&lt;br /&gt; Third line with line break&lt;br /&gt;
+
+First line without line break Second line without line break Third line without line break</code></pre>
+                            </p>
+                            <p>
+                                <span class="lead">Output </span>
+                            </p>
+
+                            <!-- result -->
+                            <div class="code-container">
+                                <div id="textArea-m9" class="d-none mb-3">
+                                    <textarea name="" id="html-m9" cols="30" rows="5" 
+                                    class="form-control code-textarea" oninput="reload(); sync_scroll(this);" 
+                                    onkeydown="check_tab(this, event);"></textarea>
+                                </div>
+                                <div class="result">
+                                    <div class="">
+                                        <span>First line with line break</span>
+                                        <br><span>Second line with line break</span>
+                                        <br><span>Third line with line break</span>
+
+                                        <br><br><span>First line without line break</span>
+                                        <span>Second line without line break</span>
+                                        <span>Third line without line break</span>
+                                    </div>
+                                    <iframe id="result-m9" class="d-none"></iframe>
+                                </div>
+                            </div>
+                            <br>
+
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <a onclick="prev(this)" class="btn btn-3 mt-5"><span class=""><i class="fa-solid fa-arrow-left-long text-red"></i>
+                                </span> </a>
+                                <a onclick="next(this)" class="btn btn-3 mt-5">  <span class=""><i
+                                    class="fa-solid fa-arrow-right text-red"></i></span></a>
+                            </div>
+                        </span>
+                        <span class="d-none">
+                            <h1><strong>HTML <span class="text-red">Blockquote </span></strong></h1>
+                            <p class="p-content">
+                                <br><br> HTML Blockquote indicates that its element content is an extended quotation which is also indented.
+                                <br><br> <code class="code-tag">&lt;blockquote&gt;</code> tag defines an HTML Line block quotation.
+                                <br><br><p><span class="lead">Attribute <code class="code-tag">cite</code></span></p>
+                                <br>The <code class="code-tag">cite</code> attribute value is a URL that designates a source document.
+                                <br><br>The <code class="code-tag">&lt;cite&gt;</code> provides the text representation of the source given by the cite attribute.
+                                <br><br><br><p><span class="lead">Example</span></p>
+                                <pre class="code"><code class="prettyprint" id="code-m10"><span onclick="_initDocuments('html-m10', '', '', 'result-m10'); editToggle('textArea-m10', 'code-m10', 'result-m10');"><i class="fa-solid fa-pen float-end edit-icon"></i></span>&lt;blockquote cite&equals;&quot;https://www.huxley.net/bnw/four.htm&quot; &gt;
+Words can be like X-rays, if you use them properly—they’ll go through anything. 
+You read and you’re pierced.
+&lt;/blockquote&gt; 
+&lt;cite &gt;- name&lt;/cite&gt;</code></pre>
+                            </p>
+                            <p>
+                                <span class="lead">Output </span>
+                            </p>
+
+                            <!-- result -->
+                            <div class="code-container">
+                                <div id="textArea-m10" class="d-none mb-3">
+                                    <textarea name="" id="html-m10" cols="30" rows="5" 
+                                    class="form-control code-textarea" oninput="reload(); sync_scroll(this);" 
+                                    onkeydown="check_tab(this, event);"></textarea>
+                                </div>
+                                <div class="result">
+                                    <div class="">
+                                        <blockquote cite="https://www.huxley.net/bnw/four.htm">
+                                            Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.
+                                        </blockquote>
+                                        <cite>
+                                            -Brave New World
+                                        </cite>
+                                    </div>
+                                    <iframe id="result-m10" class="d-none"></iframe>
+                                </div>
+                            </div>
+                            <br>
+
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <a onclick="prev(this)" class="btn btn-3 mt-5"><span class=""><i class="fa-solid fa-arrow-left-long text-red"></i>
+                                </span> </a>
+                                <a onclick="next(this)" class="btn btn-3 mt-5">  <span class=""><i
+                                    class="fa-solid fa-arrow-right text-red"></i></span></a>
+                            </div>
+                        </span>
+                        <span class="d-none">
+                            <h1><strong>HTML <span class="text-red">Code </span></strong></h1>
+                            <p class="p-content">
+                                <br><br> The <code class="code-tag">code</code> tag is used to define a piece of computer code. 
+                                <br><br>The content inside is displayed in the browser's default monospace font.
+                                <br><br>This tag styles its element to match the computer’s default text format.
+                                <br><br>The web browsers by default use a monospace font family for displaying <code class="code-tag">&lt;code&gt;</code> tags element content.
+                                <br><p><span class="lead">Syntax</span></p>
+                                <code class="code-tag">&lt;code&gt; Content...&lt;/code&gt;</code>.
+                                <br><br><br><p><span class="lead">Example</span></p>
+                                <pre class="code"><code class="prettyprint" id="">&lt;code&gt;alert("Hello world");&lt;/code&gt;</code></pre>
+                            </p>
+                            <p>
+                                <span class="lead">Output </span>
+                            </p>
+
+                            <!-- result -->
+                            <div class="code-container">
+                                <div id="textArea-m" class="d-none mb-3">
+                                    <textarea name="" id="html-m" cols="30" rows="5" 
+                                    class="form-control code-textarea" oninput="reload(); sync_scroll(this);" 
+                                    onkeydown="check_tab(this, event);"></textarea>
+                                </div>
+                                <div class="result">
+                                    <div class="">
+                                        <pre class="code"><code class="prettyprint"><code>alert("Hello world");</code></code></pre>
+                                    </div>
+                                    <iframe id="result-m" class="d-none"></iframe>
+                                </div>
+                            </div>
+                            <br>
+
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <a onclick="prev(this)" class="btn btn-3 mt-5"><span class=""><i class="fa-solid fa-arrow-left-long text-red"></i>
+                                </span> </a>
+                                <a onclick="next(this)" class="btn btn-3 mt-5">  <span class=""><i
+                                    class="fa-solid fa-arrow-right text-red"></i></span></a>
+                            </div>
+                        </span>
+                        <span class="d-none">
+                            <h1><strong>HTML <span class="text-red">Division </span></strong></h1>
+                            <p class="p-content">
+                                <br><br> The <code class="code-tag">&lt;div&gt;</code> tag is known as Division tag. 
+                                <br><br> The <code class="code-tag">&lt;div&gt;</code> tag used in HTML to make divisions of content in the web page like 
+                                (text, images, header, footer, navigation bar, etc). 
+                                <br><br><strong>Div tag is Block level tag.</strong>
+                                <br><br><strong>It is used to the group of various tags of HTML so that sections can be created and style can be applied to them.</strong>
+                                <br><br><strong>It is a generic container tag.</strong>
+                                <br><br>The <code class="code-tag">&lt;div&gt;</code> tag is easily styled by using the class or id attribute.
+                                <br><br>Any sort of content can be put inside the <code class="code-tag">&lt;div&gt;</code> tag! 
+                                <br><br><br><p><span class="lead">Example</span></p>
+                            </p>
+                            <pre class="code"><code class="prettyprint" id="code-m12"><span onclick="_initDocuments('html-m12', '', '', 'result-m12'); editToggle('textArea-m12', 'code-m12', 'result-m12');"><i class="fa-solid fa-pen float-end edit-icon"></i></span>&lt;div style="height: 30px; text-align: start; color: white; background-color: black"&gt;div #1&lt;/div&gt;
+&lt;div style="height: 50px; text-align: center; color: white; background-color: green"&gt;div #2&lt;/div&gt;
+&lt;div style="height: 30px; text-align: end; color: white; background-color: lightblue"&gt;div #3&lt;/div&gt;
+</code></pre>
+                            <p>
+                                <span class="lead">Output </span>
+                            </p>
+
+                            <!-- result -->
+                            <div class="code-container">
+                                <div id="textArea-m12" class="d-none mb-3">
+                                    <textarea name="" id="html-m12" cols="30" rows="5" 
+                                    class="form-control code-textarea" oninput="reload(); sync_scroll(this);" 
+                                    onkeydown="check_tab(this, event);"></textarea>
+                                </div>
+                                <div class="result">
+                                    <div class="">
+                                        <div style="height: 30px; text-align:start; color: white; background-color: black">div #1</div>
+                                        <div style="height: 50px; text-align:center; color: white; background-color: green">div #2</div>
+                                        <div style="height: 30px; text-align:end; color: white; background-color: lightblue">div #3</div>
+                                    </div>
+                                    <iframe id="result-m12" class="d-none"></iframe>
+                                </div>
+                            </div>
+                            <br>
+
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <a onclick="prev(this)" class="btn btn-3 mt-5"><span class=""><i class="fa-solid fa-arrow-left-long text-red"></i>
+                                </span> </a>
+                                <a onclick="next(this)" class="btn btn-3 mt-5">  <span class=""><i
+                                    class="fa-solid fa-arrow-right text-red"></i></span></a>
+                            </div>
+                        </span>
+                        <span class="d-none">
+                            <h1><strong>HTML <span class="text-red">Form </span></strong></h1>
+                            <p class="p-content">
+                                <br><br> HTML Forms can be used to collect user data. 
+                                <br><br>The <code class="code-tag">&lt;form&gt;</code> tag defines a HTML Form.
+                                <br><br><br><h2><strong>HTML<span class="text-red">Form </span> Attributes</strong></h2>
+                                <br><code class="code-tag">autocomplete</code> tells the browser to automatically complete the form.
+                                <br><br><code class="code-tag">name</code>, <code class="code-tag">id</code> and <code class="code-tag">class</code> used for identifying the form; for the purpose of styling.
+                                <br><br><code class="code-tag">target</code> indicates the form where to display the response. 
+                                It can be <code class="code-tag">_self</code>, <code class="code-tag">_blank</code> ,  <code class="code-tag">_parent</code> or <code class="code-tag">_top</code>
+                                <br><br><code class="code-tag">action</code> where the input data processed.
+                                <br><br><code class="code-tag">method</code> the HTTP method to submit the form with. The value can be <code class="code-tag">POST</code> method the data sent as the request body or <br><br><code class="code-tag">GET</code> the data appended to the action URL.
+                                <br><br><br><p><span class="lead">Example</span></p>
+                            </p>
+                            <pre class="code"><code class="prettyprint" id="code-m14"><span onclick="_initDocuments('html-m14', '', '', 'result-m14'); editToggle('textArea-m14', 'code-m14', 'result-m14');"><i class="fa-solid fa-pen float-end edit-icon"></i></span>&lt;form action="index.html" method="GET"&gt;
+&lt;label for="name"&gt;Full name&lt;/label&gt;
+&lt;input type="text" name="name"  id="name"&gt;&lt;br&gt;
+&lt;label for="email"&gt;Email Add&lt;/label&gt;
+&lt;input type="text" name="email"  id="email"&gt;&lt;br&gt;
+&lt;label for="message"&gt;Messages&lt;/label&gt;
+&lt;input type="text" name="message"  id="message"&gt;&lt;br&gt;
+&lt;input type="submit" value="submit"&gt;
+&lt;/form&gt;
+</code></pre>
+                            <p>
+                                <span class="lead">Output </span>
+                            </p>
+
+                            <!-- result -->
+                            <div class="code-container">
+                                <div id="textArea-m14" class="d-none mb-3">
+                                    <textarea name="" id="html-m14" cols="30" rows="5" 
+                                    class="form-control code-textarea" oninput="reload(); sync_scroll(this);" 
+                                    onkeydown="check_tab(this, event);"></textarea>
+                                </div>
+                                <div class="result">
+                                    <div class="">
+                                        <form action="index.html" method="GET">
+                                            <label for="name">Full name</label>
+                                            <input type="text" name="name"  id="name"><br>
+                                            <label for="email">Email Add</label>
+                                            <input type="text" name="email"  id="email"><br>
+                                            <label for="message">Messages</label>
+                                            <input type="text" name="message"  id="message"><br>
+                                            <input type="submit" value="submit">
+                                        </form>
+                                    </div>
+                                    <iframe id="result-m14" class="d-none"></iframe>
+                                </div>
+                            </div>
+                            <br>
+                            <p class="p-content">
+                                To submit a form a user has to click the submit button. Take a look at the URL as you can see the data you enter is now appended to its original url.
+                                <br><br><code class="code-tag">GET</code> method must not be used when submitting personal data.
+
+                                
+                            </p>
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <a onclick="prev(this)" class="btn btn-3 mt-5"><span class=""><i class="fa-solid fa-arrow-left-long text-red"></i>
+                                </span> </a>
+                                <a onclick="next(this)" class="btn btn-3 mt-5">  <span class=""><i
+                                    class="fa-solid fa-arrow-right text-red"></i></span></a>
+                            </div>
+                        </span>
+                        <span class="d-none">
+                            <h1><strong>HTML <span class="text-red">Headings </span></strong></h1>
+                            <p class="p-content">
+                                <br><br> A HTML heading tag is used to define the headings of a page. 
+                                <br><br><strong>Search Engines use headings for indexing the structure and organizing the content of the webpage.</strong>
+                                <br><br><strong>Headings are used for highlighting important topics.</strong>
+                                <br><br><strong>They provide valuable information and tell us about the structure of the document.</strong>
+                                <br><br><br><p><span class="lead">Example</span></p>
+                            </p>
+                            <pre class="code"><code class="prettyprint" id="code-m13"><span onclick="_initDocuments('html-m13', '', '', 'result-m13'); editToggle('textArea-m13', 'code-m13', 'result-m13');"><i class="fa-solid fa-pen float-end edit-icon"></i></span>&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;
+</code></pre>
+                            <p>
+                                <span class="lead">Output </span>
+                            </p>
+
+                            <!-- result -->
+                            <div class="code-container">
+                                <div id="textArea-m13" class="d-none mb-3">
+                                    <textarea name="" id="html-m13" cols="30" rows="5" 
+                                    class="form-control code-textarea" oninput="reload(); sync_scroll(this);" 
+                                    onkeydown="check_tab(this, event);"></textarea>
+                                </div>
+                                <div class="result">
+                                    <div class="">
+                                        <h1>Heading 1</h1>
+                                        <h2>Heading 2</h2>
+                                        <h3>Heading 3</h3>
+                                        <h4>Heading 4</h4>
+                                        <h5>Heading 5</h5>
+                                        <h6>Heading 6</h6>
+                                    </div>
+                                    <iframe id="result-m13" class="d-none"></iframe>
+                                </div>
+                            </div>
+                            <br>
+                            <p class="p-content">
+                                You should have noticed that the size pf a heading depends on its corresponding number after the <code class="code-tag">h</code>.
+                                <br><br>Heading Tag are only limited to <code class="code-tag">&lt;h1&gt;</code>, <code class="code-tag">&lt;h2&gt;</code>, <code class="code-tag">&lt;h3&gt;</code>
+                                <code class="code-tag">&lt;h4&gt;</code>, <code class="code-tag">&lt;h5&gt;</code>, <code class="code-tag">&lt;h6&gt;</code>.
+                                <br><br><code class="code-tag">&lt;h1&gt;</code> defines the most important heading. <code class="code-tag">&lt;h6&gt;</code> defines the least important heading.
+                            </p>
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <a onclick="prev(this)" class="btn btn-3 mt-5"><span class=""><i class="fa-solid fa-arrow-left-long text-red"></i>
+                                </span> </a>
+                                <a onclick="next(this)" class="btn btn-3 mt-5">  <span class=""><i
+                                    class="fa-solid fa-arrow-right text-red"></i></span></a>
+                            </div>
+                        </span>
+                        <span class="d-none">
+                            <h1><strong>HTML <span class="text-red">Iframe </span></strong></h1>
+                            <p class="p-content">
+                                <br><br> HTML Iframe also known as HTML inline frame represents context as it embeds another HTML page into the current page. 
+                                <br><br>The <code class="code-tag">&lt;iframe&gt;</code> tag specifies an inline frame.
+                                <br><br><br><p><span class="lead">HTML iframe attributes</span></p>
+                                <br><code class="code-tag">height</code> - specify the height of the frame.
+                                <br><br><code class="code-tag">width</code> - specify the width of the frame
+                                <br><br><code class="code-tag">src</code> - the url or the path of the file to embed
+                                <br><br><br><p><span class="lead">Example</span></p>
+                            </p>
+                            <pre class="code"><code class="prettyprint" id="code-m15"><span onclick="_initDocuments('html-m15', '', '', 'result-m15'); editToggle('textArea-m15', 'code-m15', 'result-m15');"><i class="fa-solid fa-pen float-end edit-icon"></i></span>&lt;iframe src="../index.html" frameborder="0" style="height: 200; width: 100%"&gt;&lt;/iframe&gt;
+</code></pre>
+                            <p>
+                                <span class="lead">Output </span>
+                            </p>
+
+                            <!-- result -->
+                            <div class="code-container">
+                                <div id="textArea-m15" class="d-none mb-3">
+                                    <textarea name="" id="html-m15" cols="30" rows="5" 
+                                    class="form-control code-textarea" oninput="reload(); sync_scroll(this);" 
+                                    onkeydown="check_tab(this, event);"></textarea>
+                                </div>
+                                <div class="result">
+                                    <div class="">
+                                        <iframe src="../index.html" frameborder="0" style="height: 400; width: 100%"></iframe>
+                                    </div>
+                                    <iframe id="result-m15" class="d-none"></iframe>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <a onclick="prev(this)" class="btn btn-3 mt-5"><span class=""><i class="fa-solid fa-arrow-left-long text-red"></i>
+                                </span> </a>
+                                <a onclick="next(this)" class="btn btn-3 mt-5">  <span class=""><i
+                                    class="fa-solid fa-arrow-right text-red"></i></span></a>
+                            </div>
+                        </span>
+                        <span class="d-none">
+                            <h1><strong>HTML <span class="text-red">Images </span></strong></h1>
+                            <p class="p-content">
+                                <br><br> HTML Images are indeed needed of required for any website.
+                                <br><br>HTML Images are inline elements that can be placed within a paragraph
+                                <br><br>The <code class="code-tag">&lt;img /&gt;</code> tag and an attribute <code class="code-tag">src</code> allows you to add an image into your website.
+                                <br><br><p><span class="lead">HTML Image attribute</span></p>
+                                <br>The <code class="code-tag">src</code> defines the URL or the location an image.
+                                <br><br>The <code class="code-tag">alt</code> attribute provides an alternative text for an image.
+                                <br><br>The <code class="code-tag">width</code> attribute change the width of an image.
+                                <br><br>The <code class="code-tag">height</code> attribute change the height of an image.
+                                <br><br><br><p><span class="lead">Example</span></p>
+                            </p>
+                            <pre class="code"><code class="prettyprint" id="code-m16"><span onclick="_initDocuments('html-m16', '', '', 'result-m16'); editToggle('textArea-m16', 'code-m16', 'result-m16');"><i class="fa-solid fa-pen float-end edit-icon"></i></span>&lt;img src="./img/ezgif.com-gif-maker.webp" alt="a bridge" height="200" width="200"&gt;
+</code></pre>
+                            <p>
+                                <span class="lead">Output </span>
+                            </p>
+
+                            <!-- result -->
+                            <div class="code-container">
+                                <div id="textArea-m16" class="d-none mb-3">
+                                    <textarea name="" id="html-m16" cols="30" rows="5" 
+                                    class="form-control code-textarea" oninput="reload(); sync_scroll(this);" 
+                                    onkeydown="check_tab(this, event);"></textarea>
+                                </div>
+                                <div class="result">
+                                    <div class="">
+                                        <img src="./img/ezgif.com-gif-maker.webp" alt="a bridge" height="200" width="200">
+                                    </div>
+                                    <iframe id="result-m16" class="d-none"></iframe>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <a onclick="prev(this)" class="btn btn-3 mt-5"><span class=""><i class="fa-solid fa-arrow-left-long text-red"></i>
+                                </span> </a>
+                                <a onclick="next(this)" class="btn btn-3 mt-5">  <span class=""><i
+                                    class="fa-solid fa-arrow-right text-red"></i></span></a>
+                            </div>
+                        </span>
+                        <span class="d-none">
+                            <h1><strong>HTML <span class="text-red">Input </span></strong></h1>
+                            <p class="p-content">
+                                <br><br> HTML Input is most commonly used for collecting and retrieving user data from a web form.
+                                <br><br>The way to determine the type of input field, or form input control, is to set the type attribute and assign it a value.
+                                <br><br><p><span class="lead">HTML Input type values</span></p>
+                                <code class="code-tag">value = "hidden"</code>,
+                                <br><br> <code class="code-tag">value = "text"</code>,
+                                <br><br> <code class="code-tag">value = "search"</code>,
+                                <br><br> <code class="code-tag">value = "number"</code>,
+                                <br><br> <code class="code-tag">value = "email"</code>,
+                                <br><br> <code class="code-tag">value = "submit"</code>,
+                                <br><br> <code class="code-tag">value = "email"</code>,
+                                <br><br> <code class="code-tag">value = "password"</code>,
+                                <br><br> <code class="code-tag">value = "date"</code>,
+                                <br><br> <code class="code-tag">value = "month"</code>,
+                                <br><br> <code class="code-tag">value = "week"</code>,
+                                <br><br> <code class="code-tag">value = "time"</code>,
+                                <br><br> <code class="code-tag">value = "range"</code>,
+                                <br><br> <code class="code-tag">value = "radio"</code>,
+                                <br><br> <code class="code-tag">value = "color"</code>,
+                                <br><br> <code class="code-tag">value = "file"</code>.
+                                <br><br><p><span class="lead">More HTML Input attributes</span></p>
+                                <code class="code-tag">placeholder = "text"</code> a way to prompt and give a hint to users as to what kind of information they need to fill out in the form.
+                                <br><br> <code class="code-tag">required</code> make it so certain fields are required and need to be filled in by users.
+                                <br><br><br><p><span class="lead">Example</span></p>
+                            </p>
+                            <pre class="code"><code class="prettyprint" id="code-m17"><span onclick="_initDocuments('html-m17', '', '', 'result-m17'); editToggle('textArea-m17', 'code-m17', 'result-m17');"><i class="fa-solid fa-pen float-end edit-icon"></i></span>&lt;div style="border: 1px solid black; padding: 10px;"&gt;
+    &lt;form action="#" method = "post"&gt;
+        &lt;label for=""&gt;Full name&lt;/label&gt;
+        &lt;input type="text" style="margin-bottom: 5px"&gt;&lt;br&gt;
+        &lt;label for=""&gt;Email&lt;/label&gt;
+        &lt;input type="email" style="margin-bottom: 5px" required&gt;&lt;br&gt;
+        &lt;label for=""&gt;Password&lt;/label&gt;
+        &lt;input type="password" style="margin-bottom: 5px" placeholder="Enter your password"&gt;&lt;br&gt;
+        &lt;label for=""&gt;Upload photo&lt;/label&gt;
+        &lt;input type="file" style="margin-bottom: 5px"&gt;&lt;br&gt;
+        &lt;input type="submit" style="margin-bottom: 5px" value="Submit"&gt;
+    &lt;/form&gt;
+&lt;/div&gt;
+</code></pre>
+                            <p>
+                                <span class="lead">Output </span>
+                            </p>
+
+                            <!-- result -->
+                            <div class="code-container">
+                                <div id="textArea-m17" class="d-none mb-3">
+                                    <textarea name="" id="html-m17" cols="30" rows="5" 
+                                    class="form-control code-textarea" oninput="reload(); sync_scroll(this);" 
+                                    onkeydown="check_tab(this, event);"></textarea>
+                                </div>
+                                <div class="result">
+                                    <div class="">
+                                        <div style="border: 1px solid black; padding: 10px;">
+                                            <form action="#" method = "post">
+                                                <label for="">Full name</label>
+                                                <input type="text" style="margin-bottom: 5px"><br>
+                                                <label for="">Email</label>
+                                                <input type="email" style="margin-bottom: 5px" required><br>
+                                                <label for="">Password</label>
+                                                <input type="password" style="margin-bottom: 5px" placeholder="Enter your password"><br>
+                                                <label for="">Upload photo</label>
+                                                <input type="file" style="margin-bottom: 5px"><br>
+                                                <input type="submit" style="margin-bottom: 5px" value="Submit">
+                                                </form>
+                                        </div>
+                                    </div>
+                                    <iframe id="result-m17" class="d-none"></iframe>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <a onclick="prev(this)" class="btn btn-3 mt-5"><span class=""><i class="fa-solid fa-arrow-left-long text-red"></i>
+                                </span> </a>
+                                <a onclick="next(this)" class="btn btn-3 mt-5">  <span class=""><i
+                                    class="fa-solid fa-arrow-right text-red"></i></span></a>
+                            </div>
+                        </span>
+                        <span class="d-none">
+                            <h1><strong>HTML <span class="text-red">External Resources</span></strong></h1>
+                            <p class="p-content">
+                                <br><br> HTML uses a special tag for linking external resources like CSS, JAVASCRIPT, libraries and many more.
+                                <br><br><p><span class="lead">HTML <code class="code-tag">&lt;link></code> and <code class="code-tag">&lt;script></code></span></p>
+                                <code class="code-tag">&lt;link></code> used to link external stylesheet.
+                                <br><br><code class="code-tag">href</code> attribute provides the path to the stylesheet.
+                                <br><br><code class="code-tag">rel</code> attribute with a value of stylesheet (rel = relationship).
+                                <br><br> <code class="code-tag">&lt;link></code> used to link external script.
+                                <br><br><code class="code-tag">src</code> attribute provides the path to the script.
+                                <br><br><br><p><span class="lead">Example</span></p>
+                            </p>
+                            <pre class="code"><code class="prettyprint" id="">&lt;link rel="stylesheet" href="path to the .css file"&gt;
+&lt;script src="path to the .js file"&gt;&lt;/script&gt;
+</code></pre>
+                           
+                            <br>
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <a onclick="prev(this)" class="btn btn-3 mt-5"><span class=""><i class="fa-solid fa-arrow-left-long text-red"></i>
+                                </span> </a>
+                                <a onclick="next(this)" class="btn btn-3 mt-5">  <span class=""><i
+                                    class="fa-solid fa-arrow-right text-red"></i></span></a>
+                            </div>
+                        </span>
+                        <span class="d-none">
+                            <h1><strong>HTML <span class="text-red">Paragraph</span></strong></h1>
+                            <p class="p-content">
+                                <br><br> HTML Paragraph offers a way to structure your text or mainly to group sentences. 
+                                <br><br> Each paragraph of text should go in between a start tag <code class="code-tag">&lt;p></code> and an end tag <code class="code-tag">&lt;/p></code>
+                                <br><br>Paragraph is a <strong>block level element</strong>. 
+                                <br><br>What is a a block level element? 
+                                <br><br> The answer is an element that creates a horizontal boundary block meaning it always starts on a new line and take the whole with available.
+                                <br><br><p><span class="lead">Block level elements</span></p><code class="code-tag">&lt;div></code>, 
+                                <code class="code-tag">&lt;p></code>,
+                                <code class="code-tag">&lt;h1></code> to <code class="code-tag">&lt;h6></code>  
+                                <br><br><br><p><span class="lead">Example</span></p>
+                            </p>
+                            <pre class="code"><code class="prettyprint" id="">&lt;h5 style="background-color:rgb(94, 122, 131) ;"&gt;Heading5&lt;/h5&gt;
+&lt;p style="background-color:lightblue ;"&gt;Paragraph 1&lt;/p&gt;
+&lt;p style="background-color:rgb(117, 167, 139) ;"&gt;Paragraph 2&lt;/p&gt;
+&lt;p style="background-color:rgb(181, 204, 143) ;"&gt;Paragraph 3&lt;/p&gt;
+&lt;p style="background-color:rgb(192, 163, 140) ;"&gt;Paragraph 4&lt;/p&gt;
+</code></pre>
+                            <p>
+                                <span class="lead">Output </span>
+                            </p>
+
+                            <!-- result -->
+                            <div class="code-container">
+                                <div id="textArea-m17" class="d-none mb-3">
+                                    <textarea name="" id="html-m17" cols="30" rows="5" 
+                                    class="form-control code-textarea" oninput="reload(); sync_scroll(this);" 
+                                    onkeydown="check_tab(this, event);"></textarea>
+                                </div>
+                                <div class="result">
+                                    <div class="">
+                                        <h5 style="background-color:rgb(94, 122, 131) ;">Heading5</h5>
+                                        <p style="background-color:lightblue ;">Paragraph 1</p>
+                                        <p style="background-color:rgb(117, 167, 139) ;">Paragraph 2</p>
+                                        <p style="background-color:rgb(181, 204, 143) ;">Paragraph 3</p>
+                                        <p style="background-color:rgb(192, 163, 140) ;">Paragraph 4</p>
+                                    </div>
+                                    <iframe id="result-m17" class="d-none"></iframe>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <a onclick="prev(this)" class="btn btn-3 mt-5"><span class=""><i class="fa-solid fa-arrow-left-long text-red"></i>
+                                </span> </a>
+                                <a onclick="next(this)" class="btn btn-3 mt-5">  <span class="">End of lesson</span></a>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <script src="../htmlPage/js/content.js"></script><!--htmlPage js-->
+    <script src="../editor/js/editor.js"></script><!--Editor js-->
+</body>
+
+</html>

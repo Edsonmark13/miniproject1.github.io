@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>B' Academy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8ad5cf4f0f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css"> <!--main css-->
+    <link rel="stylesheet" href="../htmlPage/css/style.css"> <!--htmlPage css-->
+    <link rel="stylesheet" href="./css/style.css"> <!--jsPage css-->
+
+    <link rel="stylesheet" href="./css/prism.css"> <!--highlighter css-->
+</head>
+
+<body>
+    <!-- Header -->
+
+    <head>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-blue fixed-top">
+                <div class="container ">
+                    <a class="navbar-brand" href="../index.html" style="font-size: 30px;"></i> B' Academy </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav m-auto p-3">
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Learn
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="../htmlPage/index.html">HTML</a></li>
+                                    <li><a class="dropdown-item " href="#">CSS</a></li>
+                                    <li><a class="dropdown-item " href="index.html">Javascript</a></li>
+                                    <li><a class="dropdown-item " href="#">Bootstrap</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" aria-current="page" href="#">Mentorship</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="../editor/index.html">Editor</a>
+                            </li>
+                        </ul>
+
+                        <hr />
+                        <div class="d-grid gap-2 d-flex justify-content-center align-items-center mb-3">
+                            <a class="btn btn-0">Ask Developers</a>
+                            <a class="btn btn-1">Log in</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </head>
+
+    <section class="showcase container-fluid">
+        <div class="container py-5">
+            <div class="row pb-5">
+                <div class="col-sm-12 col-md-6 text-center text-md-start ms-md-5">
+                    <p class="lead">Learning Progress</p>
+                    <h1><strong class="text-red">Basic Javascript</strong></h1>
+
+                    <a href="" class="btn btn-3 mt-5"> Continue where you left <span class="ms-2"><i
+                                class="fa-solid fa-arrow-right text-red"></i></span></a>
+                </div>
+                <div class="col-sm-12 col-md-4 d-flex  justify-content-center" id="progress">
+                    <div role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="--value:0"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="main-content-container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 sidebar">
+                    <p class="lead mt-3 text-center"><i class="fa-brands fa-js learn-icon learn-icon-js"></i></p>
+                    <ul id="menu-container">
+                        <li class="li-active" onclick="menuClick(this)">JS Intro <span></span><span class="float-end"><i class="fa-solid fa-circle-check li-icon"></i></span></li>
+                        <li class="li-normal" onclick="menuClick(this)">JS Output <span></span><span class="float-end"><i class="fa-solid fa-circle-check li-icon"></i></span></li>
+                        <li class="li-normal" onclick="menuClick(this)">JS <code>Comments</code> <span class="float-end"><i class="fa-solid fa-circle-check li-icon"></i></span></li>
+                        <li class="li-normal" onclick="menuClick(this)">JS <code>Variables</code> <span class="float-end"><i class="fa-solid fa-circle-check li-icon"></i></span></li>
+                        <li class="li-normal" onclick="menuClick(this)">JS <code>Data Types</code> <span class="float-end"><i class="fa-solid fa-circle-check li-icon"></i></span></li>
+                        <li class="li-normal" onclick="menuClick(this)">JS <code>Operators</code> <span class="float-end"><i class="fa-solid fa-circle-check li-icon"></i></span></li>
+                        <li class="li-normal" onclick="menuClick(this)">JS <code>if-else</code> <span class="float-end"><i class="fa-solid fa-circle-check li-icon"></i></span></li>
+                        <li class="li-normal" onclick="menuClick(this)">JS <code>Switch</code> <span class="float-end"><i class="fa-solid fa-circle-check li-icon"></i></span></li>
+                        <li class="li-normal" onclick="menuClick(this)">JS <code>Loops</code> <span class="float-end"><i class="fa-solid fa-circle-check li-icon"></i></span></li>
+                        <li class="li-normal" onclick="menuClick(this)">JS <code>Functions</code> <span class="float-end"><i class="fa-solid fa-circle-check li-icon"></i></span></li>
+                        <li class="li-normal" onclick="menuClick(this)">JS <code>Strings</code> <span class="float-end"><i class="fa-solid fa-circle-check li-icon"></i></span></li>
+                        <li class="li-normal" onclick="menuClick(this)">JS <code>Numbers</code> <span class="float-end"><i class="fa-solid fa-circle-check li-icon"></i></span></li>
+                        <li class="li-normal" onclick="menuClick(this)">JS <code>Arrays</code> <span class="float-end"><i class="fa-solid fa-circle-check li-icon"></i></span></li>
+                        <li class="li-normal" onclick="menuClick(this)">JS <code>Dates</code> <span class="float-end"><i class="fa-solid fa-circle-check li-icon"></i></span></li>
+                        <li class="li-normal" onclick="menuClick(this)">JS <code>Images</code> <span class="float-end"><i class="fa-solid fa-circle-check li-icon"></i></span></li>
+                        <li class="li-normal" onclick="menuClick(this)">JS <code>Input</code> <span class="float-end"><i class="fa-solid fa-circle-check li-icon"></i></span></li>
+                        <li class="li-normal" onclick="menuClick(this)">JS <code>External src</code> <span class="float-end"><i class="fa-solid fa-circle-check li-icon"></i></span></li>
+                        <li class="li-normal" onclick="menuClick(this)">JS <code>Paragraph</code> <span class="float-end"><i class="fa-solid fa-circle-check li-icon"></i></span></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-9 px-5 py-5">
+                    <div class="content" id="main-content">
+                        <span class="d-none">
+                        <h1><strong>What is <span class="text-red">Javascript</span> ?</strong></h1>
+                        <p class="p-content">
+                            <br><br>Javascript is a programming language or a scripting language that allows the implementation of features on we pages.
+                            <br><br>Javascript is one of the 3 languages all web developers must learn: <code class="code-tag">HTML</code>, <code class="code-tag">CSS</code> and <code class="code-tag">Javascript</code>.
+                            <br><br>Javascript example is easy to code.
+                            <br><br>Javascript provides 3 places to put the code: within the <code class="code-tag">body</code> tag, within the <code class="code-tag">head</code> tag and saving it in <code class="code-tag">.js</code> file (external file)
+                            
+                        </p>
+                        <br><span class="lead">Code example </span>
+                        <pre class="code"><code class="language-js" id="code">&lt;button id="sampleButton"&gt;Show a Dialog&lt;/button&gt;
+&lt;script&gt;
+    document.getElementById("sampleButton").onclick = function(){
+        alert('This is a dialog box')
+    };
+&lt;/script&gt;</code></pre>
+                        <p>
+                            <span class="lead">Output </span>
+                        </p>
+
+                        <!-- result -->
+                        <div class="code-container">
+                            <div id="textArea" class="d-none mb-3">
+                                <textarea name="" id="html-m1" cols="30" rows="5" 
+                                class="form-control code-textarea" oninput="reload(); sync_scroll(this);" 
+                                onkeydown="check_tab(this, event);"></textarea>
+                            </div>
+                            <div class="result">
+                                <div class="">
+                                   <button id="demo1">Show a Dialog</button>
+                                </div>
+                                <iframe id="result" class="d-none"></iframe>
+                            </div>
+                        </div>
+                        <br><br>
+                        <p>
+                            In the example above we create a button element.
+                            <br><br>We add a simple <code class="code-tag">onclick</code> event to show the dialog box when the button is clicked.
+                            <br><br>You can also use <code class="code-tag">onclick</code> as an attribute to button like this:
+                        </p>
+                        <br><span class="lead">Code example </span>
+                        <pre class="code"><code class="language-js" id="code">&lt;button onclick="showDialogExample1()"&gt;Show a Dialog&lt;/button&gt;
+function showDialogExample1(){
+    alert('This is a dialog box');
+}</code></pre>
+                        <p>
+                            <span class="lead">Output </span>
+                        </p>
+                            
+                        <!-- result -->
+                        <div class="code-container">
+                            <div id="textArea" class="d-none mb-3">
+                                <textarea name="" id="html-m1" cols="30" rows="5" 
+                                class="form-control code-textarea" oninput="reload(); sync_scroll(this);" 
+                                onkeydown="check_tab(this, event);"></textarea>
+                            </div>
+                            <div class="result">
+                                <div class="">
+                                    <button onclick="showDialogExample1()">Show a Dialog</button>
+                                </div>
+                                <iframe id="result" class="d-none"></iframe>
+                            </div>
+                        </div>
+                        <br><br>
+                        <span class="lead"><strong>What Javascript can do?</strong></span>
+                        <p class="p-content">
+                            <br>
+                            A lot! here are some example.
+                            <br><br>Javascript can change the content of HTML elements.
+                            <pre><code class="language-js" id="code">document.getElementById('demo1').innerHTML="Hello World";</code></pre>
+                            <br>Javascript can change the value of attributes.
+                            <pre><code class="language-js" id="code">document.getElementById('image').src="image path";</code></pre>
+                            <br>Javascript can change the styling of HTML elements.
+                            <pre><code class="language-js" id="code">document.getElementById('demo').style.color="green";</code></pre>
+                            <br>Javascript can show or hide elements.
+                            <pre><code class="language-js" id="code">document.getElementById('demo').style.display="block";</code></pre>
+                            <pre><code class="language-js" id="code">document.getElementById('demo').style.display="none";</code></pre>
+                        </p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <a onclick="next(this)" class="btn btn-3 mt-5"><span class=""><i
+                                class="fa-solid fa-arrow-right text-red"></i></span></a>
+                        </div>
+                        </span>
+                        <span class="d-none">
+                            <h1><strong>JS Display <span class="text-red">Output</span></strong></h1>
+                            <p class="p-content">
+                                <br><br> Displaying or generating output in Javascript is very important especially when learning the language.
+                                <br><br>In Javascript, there are four ways of displaying output.
+                                <br><br><br><strong class="lead">Using the <code class="code-tag">console</code></strong>
+                                <br><br>By using the <code class="code-tag">console.log()</code> we can write into the browser's developer console.
+                                <br><br><span class="lead">Example</span>
+                                <br><pre class="code"><code class="language-js">console.log("Hello World");</code></pre>   
+                                <br><br><strong class="lead">Using the <code class="code-tag">alert</code></strong>
+                                <br><br>By using the <code class="code-tag">alert()</code> function, we can output data on a dialog box.
+                                <br><br><span class="lead">Example</span>
+                                <br><pre class="code"><code class="language-js">alert("Hello World");</code></pre>  
+                                <br><br><strong class="lead">Writing to the Browser<code class="code-tag">window</code></strong>
+                                <br><br>By using the <code class="code-tag">document.write()</code> function, we can write to the content of the document.
+                                <i>Note. This should only be used for testing purposes as it will delete all existing HTML in the current page.</i>
+                                <br><br><span class="lead">Example</span>
+                                <br><pre class="code"><code class="language-js">document.write("Hello World");</code></pre> 
+                                <br><br><strong class="lead">Writing to HTML <code class="code-tag">elements</code></strong>
+                                <br><br>By using the <code class="code-tag">innerHTML</code> property, we can change the content or text of the selected element.
+                                <br><br><span class="lead">Example</span>
+                                <br><pre class="code"><code class="language-js">document.getElementById("demo").innerHTML = "Hello World";</code></pre>   
+                                <br><br>
+                            </p>
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <a onclick="prev(this)" class="btn btn-3 mt-5"><span class=""><i class="fa-solid fa-arrow-left-long text-red"></i>
+                                </span> </a>
+                                <a onclick="next(this)" class="btn btn-3 mt-5">  <span class=""><i
+                                    class="fa-solid fa-arrow-right text-red"></i></span></a>
+                            </div>
+                        </span>
+                        <span class="d-none">
+                            <h1><strong>JS <span class="text-red">Comments</span></strong></h1>
+                            <p class="p-content">
+                                <br><br>Javascript comments are used to make programming easier to read and understand.
+                                <br><br>Comments are not executed buy the browser.
+                                <br><br>Comments can be used to add notes, suggestions and hints to a Javascript code.
+                                <br><br>There two types of comments in Javascript, a single-line and the multi-line.
+                                <br><br><span class="lead">Single-line Comments</span>
+                                <br><br>To make a single-line comment, add two forward slash <code class="code-tag">//</code> to the beginning to the line. To make all text following it to be a comment.
+                                <br><br><span class="lead">Example</span>
+                                <br><pre class="code"><code class="language-js">//this statement change the content of an element
+document.getElementById('demo1').innerHTML = "Hello World";</code></pre>  
+                                <br><br>Another way is to use the <code class="code-tag">/* */</code>, the comment goes between the asterisks. This technique is much more flexible.
+                                <br><br><span class="lead">Example</span>
+                                <br><pre class="code"><code class="language-js">/*this statement change the content of an element*/
+document.getElementById('demo1').innerHTML = "Hello World";</code></pre>  
+                                <br><br><span class="lead">Multi-line Comments</span>
+                                <br><br>It can be used to add single as well as multi line comments. So it is more convenient. It represented by forward slash with asterisk the asterisk with forward slash. <code class="code-tag">/*  */</code>
+                                <br><br><span class="lead">Example</span>
+                                <br><pre class="code"><code class="language-js">/*This is a multi-line Comment
+it will not be displayed*/
+document.getElementById('demo1').innerHTML = "Hello World";</code></pre>  
+                                <p>
+                                    <span class="lead">Output </span>
+                                </p>
+
+                                <!-- result -->
+                                <div class="code-container">
+                                    <div id="textArea-m4" class="d-none mb-3">
+                                        <textarea name="" id="html-m4" cols="30" rows="5" 
+                                        class="form-control code-textarea" oninput="reload(); sync_scroll(this);" 
+                                        onkeydown="check_tab(this, event);"></textarea>
+                                    </div>
+                                    <div class="result">
+                                        <div class="">
+                                            <span>Hello World</span>
+                                        </div>
+                                        <iframe id="result-m4" class="d-none"></iframe>
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                            </p>
+
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <a onclick="prev(this)" class="btn btn-3 mt-5"><span class=""><i class="fa-solid fa-arrow-left-long text-red"></i>
+                                </span> </a>
+                                <a onclick="next(this)" class="btn btn-3 mt-5">  <span class=""><i
+                                    class="fa-solid fa-arrow-right text-red"></i></span></a>
+                            </div>
+                        </span>
+                        <span class="d-none">
+                            <h1><strong>JS <span class="text-red">Variables</span></strong></h1>
+                            <p class="p-content">
+                                <br><br>Javascript variable is simply a name of storage location. There are tow types of variables in Javascript : local variable an global variable.
+                                <br><br>The data stored could be a text, a number, boolean or others.
+                                <br><br><br>There are some rules while declaring a Javascript variable(also known as identifiers).
+                                <br><br><strong>Name must start with a letter (a to z or A to Z), underscore(_), or dollar($)</strong>
+                                <br><br><strong>After first letter we can use digits(0 to 9)</strong>
+                                <br><br><strong>Javascript variables are case sensitive, for example i and I are different variables.</strong>
+                                <br><br><strong>Reserved keywords (like <code class="code-tag">var</code> , <code class="code-tag">function</code> , <code class="code-tag">if</code> , etc. cannot be used as variable names.</strong>
+                                <br><br><br><span class="lead">Example</span>
+                                <br><br>Correct Javascript Variables
+                                <br><pre class="code"><code class="language-js">let name = "krisha";
+let age = 10;</code></pre>  
+                                <br>Incorrect Javascript Variables
+                                <br><pre class="code"><code class="language-js">let 1Name = "krisha";
+let %age = 10;</code></pre>  
+                                <br><br>Tips: You should give meaningful names to your variable as much as possible, this helps maintain the readability of your code.
+                                <br><br><span class="lead">More example of Javascript variables</span><span onclick="_initDocuments('', '', 'js-m3', 'result-m3'); editToggle('textArea-m3', 'code-m3');" class ="edit-icon-container float-end"><i class="fa-solid fa-pen edit-icon"></i></span>
+                                <br><pre class="code"><code class="language-js" id="code-m3">let num1 = 10;
+let num2 = 20;
+let sum = num1 + num2;
+document.write(sum);</code></pre> 
+                                <p>
+                                    <span class="lead">Output </span>
+                                </p>
+
+                                <!-- result -->
+                                <div class="code-container">
+                                    <div id="textArea-m3" class="d-none mb-3">
+                                        <textarea name="" id="js-m3" cols="30" rows="5" 
+                                        class="form-control code-textarea" oninput="reload();" 
+                                        onkeydown="check_tab(this, event);"></textarea>
+                                    </div>
+                                    <div class="result">
+                                        <div class="">
+                                            <span>30</span>
+                                        </div>
+                                        <iframe id="result-m3" class="d-none"></iframe>
+                                    </div>
+                                </div>
+                                <br><br><span class="lead">Javascript local variable</span>
+                                <br><br>Local variable is declared inside block or function. It is accessible within the function or block only.
+                                <br><br><span class="lead">Example</span>
+                                <br><pre class="code"><code class="language-js">function demo(){
+    let num1 = 10; //local variable
+    document.write(num1); // displays 10
+}
+document.write(num1);// error
+                                </code></pre>
+                            </p>
+                            <br><br><span class="lead">Javascript global variable</span>
+                            <br><br>Global variable is accessible from any function. A variable i.e declared outside the function or declared with window object is known as global variable.
+                            <br><br><span class="lead">Example</span><span onclick="_initDocuments('', '', 'js-m5', 'result-m5'); editToggle('textArea-m5', 'code-m5');" class ="edit-icon-container float-end"><i class="fa-solid fa-pen edit-icon"></i></span>
+                            <br><pre class="code"><code class="language-js" id="code-m5">let num = 10;
+
+function demo1(){
+    document.writeln(num);
+}
+function demo2(){
+    document.writeln(num);
+}
+demo1();
+demo2();
+</code></pre> 
+                                <p>
+                                    <span class="lead">Output </span>
+                                </p>
+
+                                <!-- result -->
+                                <div class="code-container">
+                                    <div id="textArea-m5" class="d-none mb-3">
+                                        <textarea name="" id="js-m5" cols="30" rows="5" 
+                                        class="form-control code-textarea" oninput="reload();" 
+                                        onkeydown="check_tab(this, event);"></textarea>
+                                    </div>
+                                    <div class="result">
+                                        <div class="">
+                                            <span>10 10</span>
+                                        </div>
+                                        <iframe id="result-m5" class="d-none"></iframe>
+                                    </div>
+                                </div>
+
+
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <a onclick="prev(this)" class="btn btn-3 mt-5"><span class=""><i class="fa-solid fa-arrow-left-long text-red"></i>
+                                </span> </a>
+                                <a onclick="next(this)" class="btn btn-3 mt-5">  <span class=""><i
+                                    class="fa-solid fa-arrow-right text-red"></i></span></a>
+                            </div>
+                        </span>
+                        <span class="d-none">
+                            <h1><strong>JS <span class="text-red">Data Types</span></strong></h1>
+                            <p class="p-content">
+                                <br><br>In Javascript or in any programming language, the concept of data types is important.
+                                <br><br>Data types are the different kinds of data that can be stored or used in Javascript program.
+                                <br><br>Javascript is a dynamic type language , means you don't need to specify type of the variable because it is dynamically used by Javascript engine.
+                                <br><br><strong>String</strong> data type is a sequence of characters used to represent text.
+                                <pre class="code"><code class="language-js">let name = "mark";
+let name1 = 'mark';</code></pre>
+                                <br><strong>Number</strong> data type is an integer or a floating point number(number with decimal).
+                                <pre class="code"><code class="language-js">let age = "23";</code></pre>
+                                <br><strong>Boolean</strong> data type is a logical data types that can have true or false as values only.
+                                <pre class="code"><code class="language-js">let isCodingFun = true;</code></pre>
+                                <br><strong>Undefined</strong> is a variable that has no assigned value.
+                                <pre class="code"><code class="language-js">let x;</code></pre>
+                                <br><strong>Null</strong> data type is a special data type denoting a null value -- meaning its not an empty string "" or 0. It simply means nothing
+                                <pre class="code"><code class="language-js">let x = null;</code></pre>
+                                <br><strong>Object</strong> data type is a collection of data. Object contains properties written <code class="code-tag">key</code> : <code class="code-tag">value</code> pairs. Each pair is separated by a comma ( <code class="code-tag">,</code> ) and written inside curly braces ( <code class="code-tag">{ }</code> )
+                                <pre class="code"><code class="language-js">let person = {
+    firstName: "Mark",
+    lastName: "Doe",
+    age: 23,
+    height: "1.75m";
+    isRegistered: true
+}
+</code></pre>
+                                <br><strong>Array</strong> is a collection of values. Each value is separated with comma ( <code class="code-tag">,</code> ) and is written inside square brackets  ( <code class="code-tag">[]</code> ).
+                                <pre class="code"><code class="language-js">let persons = ["mark", "juan", "doe"];</code></pre>
+                            </p>
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <a onclick="prev(this)" class="btn btn-3 mt-5"><span class=""><i class="fa-solid fa-arrow-left-long text-red"></i>
+                                </span> </a>
+                                <a onclick="next(this)" class="btn btn-3 mt-5">  <span class=""><i
+                                    class="fa-solid fa-arrow-right text-red"></i></span></a>
+                            </div>
+                        </span>
+                        <span class="d-none">
+                            <h1><strong>JS <span class="text-red">Operators</span></strong></h1>
+                            <p class="p-content">
+                                <br><br>Javascript operators are used to perform particular actions
+                                <br><br>The can be used to assign values, compare values, combine values, perform arithmetic operation and more.
+                                <br><br><span class="lead">Arithmetic Operators</span>
+                                <br><br>The arithmetic operators are used to perform arithmetic operations (like addition, subtraction, multiplication and division) between values;
+                                <br><br><strong>Here are the symbols used for the arithmetic operators:</strong>
+                                <br><br><code class="code-tag">+</code> for addition
+                                <br><br><code class="code-tag">-</code> for subtraction
+                                <br><br><code class="code-tag">*</code> for multiplication
+                                <br><br><code class="code-tag">/</code> for division
+                                <br><br><code class="code-tag">%</code> for remainder
+                                <br><br><code class="code-tag">++</code> increment ( adds 1 to its operand).
+                                <br><br><code class="code-tag">--</code> decrement ( deducts 1 to its operand).
+                                <br><br><br><span class="lead">Example</span><span onclick="_initDocuments('', '', 'js-m6', 'result-m6'); editToggle('textArea-m6', 'code-m6');" class ="edit-icon-container float-end"><i class="fa-solid fa-pen edit-icon"></i></span>
+                                <br><pre class="code"><code class="language-js" id="code-m6">let num1 = 10;
+let num2 = 30;
+let sum = num1 + num2; //try +, -, *, /, and %
+document.write(sum);</code></pre> 
+                                <p>
+                                    <span class="lead">Output </span>
+                                </p>
+
+                                <!-- result -->
+                                <div class="code-container">
+                                    <div id="textArea-m6" class="d-none mb-3">
+                                        <textarea name="" id="js-m6" cols="30" rows="5" 
+                                        class="form-control code-textarea" oninput="reload();" 
+                                        onkeydown="check_tab(this, event);"></textarea>
+                                    </div>
+                                    <div class="result">
+                                        <div class="">
+                                            <span>40</span>
+                                        </div>
+                                        <iframe id="result-m6" class="d-none"></iframe>
+                                    </div>
+                                </div>
+
+                                <br><br><span class="lead">String Operators</span>
+                                <br><br>String operators are used to concatenate or add strings.
+                                <br><br>The <code class="code-tag">+</code> operator and <code class="code-tag">=</code> are the string operators.
+                                <br><br><br><span class="lead">Example</span><span onclick="_initDocuments('', '', 'js-m7', 'result-m7'); editToggle('textArea-m7', 'code-m7');" class ="edit-icon-container float-end"><i class="fa-solid fa-pen edit-icon"></i></span>
+                                <br><pre class="code"><code class="language-js" id="code-m7">let str1 = "Coding is ";
+let str2 = 'Fun';
+let result = str1 + str2;
+document.write(result);</code></pre> 
+                                <p>
+                                    <span class="lead">Output </span>
+                                </p>
+
+                                <!-- result -->
+                                <div class="code-container">
+                                    <div id="textArea-m7" class="d-none mb-3">
+                                        <textarea name="" id="js-m7" cols="30" rows="5" 
+                                        class="form-control code-textarea" oninput="reload();" 
+                                        onkeydown="check_tab(this, event);"></textarea>
+                                    </div>
+                                    <div class="result">
+                                        <div class="">
+                                            <span>Coding is fun</span>
+                                        </div>
+                                        <iframe id="result-m7" class="d-none"></iframe>
+                                    </div>
+                                </div>
+
+                                <br><br><span class="lead">Comparison Operators</span>
+                                <br><br>Comparison operators compare its operands and return Boolean (true/false) based on whether the comparison is true or false.
+                                <br><br><strong>Here are the symbols used for the comparison operators:</strong>
+                                <br><br><code class="code-tag">==</code> equal to
+                                <br><br><code class="code-tag">===</code> identical (equal and of same type)
+                                <br><br><code class="code-tag">!=</code> not equal to
+                                <br><br><code class="code-tag">!==</code> not identical
+                                <br><br><code class="code-tag">></code> greater than
+                                <br><br><code class="code-tag">>=</code> greater than or equal to
+                                <br><br><code class="code-tag">&lt;</code> less than
+                                <br><br><code class="code-tag">&lt;=</code> less than or equal to
+                                <br><br><br><span class="lead">Example</span><span onclick="_initDocuments('', '', 'js-m8', 'result-m8'); editToggle('textArea-m8', 'code-m8');" class ="edit-icon-container float-end"><i class="fa-solid fa-pen edit-icon"></i></span>
+                                <br><pre class="code"><code class="language-js" id="code-m8">let x = 1;
+let y = 1;
+document.write(x==y); //you can try other operator/s too</code></pre> 
+                                <p>
+                                    <span class="lead">Output </span>
+                                </p>
+
+                                <!-- result -->
+                                <div class="code-container">
+                                    <div id="textArea-m8" class="d-none mb-3">
+                                        <textarea name="" id="js-m8" cols="30" rows="5" 
+                                        class="form-control code-textarea" oninput="reload();" 
+                                        onkeydown="check_tab(this, event);"></textarea>
+                                    </div>
+                                    <div class="result">
+                                        <div class="">
+                                            <span>true</span>
+                                        </div>
+                                        <iframe id="result-m8" class="d-none"></iframe>
+                                    </div>
+                                </div>
+
+                                <br><br><span class="lead">Logical Operators</span>
+                                <br><br>Logical operators are typically used with boolean values.
+                                <br><br>They are used to determine the logic between its operand.
+                                <br><br><strong>Here are the symbols used for the comparison operators:</strong>
+                                <br><br><code class="code-tag">&&</code> logical AND
+                                <br><br><code class="code-tag">||</code> logical OR
+                                <br><br><code class="code-tag">!</code> logical NOT
+                                <br><br><br><span class="lead">Example</span>
+                                <br><pre class="code"><code class="language-js">//logical AND
+true && true //true
+true && false //false
+
+//logical OR
+true || true //true
+true || false //true
+
+//logical NOT
+!(true) //false
+!(false) //true</code></pre> 
+                               
+                            </p>
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <a onclick="prev(this)" class="btn btn-3 mt-5"><span class=""><i class="fa-solid fa-arrow-left-long text-red"></i>
+                                </span> </a>
+                                <a onclick="next(this)" class="btn btn-3 mt-5">  <span class=""><i
+                                    class="fa-solid fa-arrow-right text-red"></i></span></a>
+                            </div>
+                        </span>
+                        <span class="d-none">
+                            <h1><strong>JS <span class="text-red">if-else</span></strong></h1>
+                            <p class="p-content">
+                                <br><br>Javascript if else statement is used to execute the code whether condition is true or false. 
+                                <br><br><br><strong>There are three forms of if statement in Javascript</strong>
+                                <br><br><code class="code-tag">if</code> it evaluates the content only if expression is true.
+                                <br><pre class="code"><code class="language-js" >if(condition){
+    //execute code when the condition is true
+}</code></pre> 
+
+                                <br><span class="lead">Example</span><span onclick="_initDocuments('', '', 'js-m9', 'result-m9'); editToggle('textArea-m9', 'code-m9');" class ="edit-icon-container float-end"><i class="fa-solid fa-pen edit-icon"></i></span>
+                                <br><pre class="code"><code class="language-js" id="code-m9">let grade = 70;
+if(grade >= 70){
+    document.write('You passed!');
+}</code></pre> 
+                                <p>
+                                    <span class="lead">Output </span>
+                                </p>
+
+                                <!-- result -->
+                                <div class="code-container">
+                                    <div id="textArea-m9" class="d-none mb-3">
+                                        <textarea name="" id="js-m9" cols="30" rows="5" 
+                                        class="form-control code-textarea" oninput="reload();" 
+                                        onkeydown="check_tab(this, event);"></textarea>
+                                    </div>
+                                    <div class="result">
+                                        <div class="">
+                                            <span>You passed!</span>
+                                        </div>
+                                        <iframe id="result-m9" class="d-none"></iframe>
+                                    </div>
+                                </div>
+
+                                <br><br><code class="code-tag"> if else</code> it evaluates the content whether the condition is true or false.
+                                <br><pre class="code"><code class="language-js">if(condition){
+    //execute code when the condition is true
+}else{
+    //execute code when the condition is false
+}</code></pre> 
+                                <br><span class="lead">Example</span><span onclick="_initDocuments('', '', 'js-m10', 'result-m10'); editToggle('textArea-m10', 'code-m10');" class ="edit-icon-container float-end"><i class="fa-solid fa-pen edit-icon"></i></span>
+                                <br><pre class="code"><code class="language-js" id="code-m10">let grade = 70;
+if(grade >= 70){
+    document.write('You passed!');
+}else{
+    document.write('You failed!');
+}</code></pre> 
+                                <p>
+                                    <span class="lead">Output </span>
+                                </p>
+
+                                <!-- result -->
+                                <div class="code-container">
+                                    <div id="textArea-m10" class="d-none mb-3">
+                                        <textarea name="" id="js-m10" cols="30" rows="5" 
+                                        class="form-control code-textarea" oninput="reload();" 
+                                        onkeydown="check_tab(this, event);"></textarea>
+                                    </div>
+                                    <div class="result">
+                                        <div class="">
+                                            <span>You passed!</span>
+                                        </div>
+                                        <iframe id="result-m10" class="d-none"></iframe>
+                                    </div>
+                                </div>
+
+                                <br><br><code class="code-tag">if else if</code> it evaluates the content only if the expression is true from several expressions.
+                                <br><pre class="code"><code class="language-js">if(condition){
+    //execute code when the condition is true
+}else if(condition){
+    //execute code when the condition is false
+}else{
+    //execute code when no condition is true
+}</code></pre> 
+                                <br><span class="lead">Example</span><span onclick="_initDocuments('', '', 'js-m11', 'result-m11'); editToggle('textArea-m11', 'code-m11');" class ="edit-icon-container float-end"><i class="fa-solid fa-pen edit-icon"></i></span>
+                                <br><pre class="code"><code class="language-js" id="code-m11">let grade = 70;
+if(grade >= 90){
+    document.write('Excellent!');
+}else if(grade >= 80){
+    document.write('Good Job!');
+}else if(grade >= 70){
+    document.write('You passed!');
+}else{
+    document.write('You failed!');
+}</code></pre> 
+                                <p>
+                                    <span class="lead">Output </span>
+                                </p>
+
+                                <!-- result -->
+                                <div class="code-container">
+                                    <div id="textArea-m11" class="d-none mb-3">
+                                        <textarea name="" id="js-m11" cols="30" rows="5" 
+                                        class="form-control code-textarea" oninput="reload();" 
+                                        onkeydown="check_tab(this, event);"></textarea>
+                                    </div>
+                                    <div class="result">
+                                        <div class="">
+                                            <span>You passed!</span>
+                                        </div>
+                                        <iframe id="result-m11" class="d-none"></iframe>
+                                    </div>
+                                </div>
+                            </p>
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <a onclick="prev(this)" class="btn btn-3 mt-5"><span class=""><i class="fa-solid fa-arrow-left-long text-red"></i>
+                                </span> </a>
+                                <a onclick="next(this)" class="btn btn-3 mt-5">  <span class=""><i
+                                    class="fa-solid fa-arrow-right text-red"></i></span></a>
+                            </div>
+                        </span>
+                        <span class="d-none">
+                            <h1><strong>JS <span class="text-red">switch</span></strong></h1>
+                            <p class="p-content">
+                                <br><br>Javascript switch statement matches an expression against the specified values in the case clauses.
+                                <br><br>Javascript switch statement is used to execute one code from multiple expressions. It just like <code class="code-tag">else if</code> statement that we have learned previous page. 
+                                <br><pre class="code"><code class="language-js" >switch(expression){
+    case value1:{
+        //code to be executed
+        break;
+    }
+    case value2:{
+        //code to be executed
+        break;
+    }
+    ...
+    default:{
+        //code to be executed when none are match from above values
+        break;
+    }
+}</code></pre> 
+                                <br>The <code class="code-tag">switch</code> statement evaluates the expression to value1 first, then to value2 and so on. If the expression matches a value, the associated code blocks are executed.
+                                <br><br><span class="lead">Example</span><span onclick="_initDocuments('', '', 'js-m13', 'result-m13'); editToggle('textArea-m13', 'code-m13');" class ="edit-icon-container float-end"><i class="fa-solid fa-pen edit-icon"></i></span>
+                                <br><pre class="code"><code class="language-js" id="code-m13">let grade = 'A';
+switch(grade){
+    case 'A':{
+            document.write("Excellent!!");
+            break;}
+    case 'B':{
+            document.write("Good Job!!");
+            break;}
+    case 'C':{
+            document.write("Passed!!");
+            break;}
+    default:{
+            document.write("Failed!!");}
+}</code></pre> 
+                                <p>
+                                    <span class="lead">Output </span>
+                                </p>
+
+                                <!-- result -->
+                                <div class="code-container">
+                                    <div id="textArea-m13" class="d-none mb-3">
+                                        <textarea name="" id="js-m13" cols="30" rows="5" 
+                                        class="form-control code-textarea" oninput="reload();" 
+                                        onkeydown="check_tab(this, event);"></textarea>
+                                    </div>
+                                    <div class="result">
+                                        <div class="">
+                                            <span>Excellent!!</span>
+                                        </div>
+                                        <iframe id="result-m13" class="d-none"></iframe>
+                                    </div>
+                                </div>
+
+                                <br><br>The <code class="code-tag">switch</code> statement is fall-through i.e all the cases will be evaluated if you don't use <code class="code-tag">break</code> statement. 
+                                <br><br><span class="lead">Example</span>
+                                <br><pre class="code"><code class="language-js">let grade = 'A';
+switch(grade){
+    case 'A':{
+            document.writeln("Excellent!!");}
+    case 'B':{
+            document.writeln("Good Job!!");}
+    case 'C':{
+            document.writeln("Passed!!");}
+    default:{
+            document.writeln("Failed!!");}
+}</code></pre> 
+                                <p>
+                                    <span class="lead">Output </span>
+                                </p>
+
+                                <!-- result -->
+                                <div class="code-container">
+                                    <div id="" class="d-none mb-3">
+                                        <textarea name="" id="" cols="30" rows="5" 
+                                        class="form-control code-textarea" oninput="reload();" 
+                                        onkeydown="check_tab(this, event);"></textarea>
+                                    </div>
+                                    <div class="result">
+                                        <div class="">
+                                            <span>Excellent!!Good Job!!Passed!!Failed!!</span>
+                                        </div>
+                                        <iframe id="" class="d-none"></iframe>
+                                    </div>
+                                </div>
+                            </p>
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <a onclick="prev(this)" class="btn btn-3 mt-5"><span class=""><i class="fa-solid fa-arrow-left-long text-red"></i>
+                                </span> </a>
+                                <a onclick="next(this)" class="btn btn-3 mt-5">  <span class=""><i
+                                    class="fa-solid fa-arrow-right text-red"></i></span></a>
+                            </div>
+                        </span>
+                        <span class="d-none">
+                            <h1><strong>JS <span class="text-red">Loops</span></strong></h1>
+                            <p class="p-content">
+                                <br><br>Javascript loops are used to iterate the piece of code using the <code class="code-tag">for</code> , <code class="code-tag">while</code> , <code class="code-tag">do while</code>;
+                                <br><br><code class="code-tag">for</code> loop iterates the elements for the fixed number of times. I should be used if the number of iteration is known.
+                                <br><pre class="code"><code class="language-js" >for(initialization; condition; increment/decrement){
+    //code to be executed
+}</code></pre> 
+                            <br><span class="lead">Example</span><span onclick="_initDocuments('', '', 'js-m14', 'result-m14'); editToggle('textArea-m14', 'code-m14');" class ="edit-icon-container float-end"><i class="fa-solid fa-pen edit-icon"></i></span>
+                            <br><pre class="code"><code class="language-js" id="code-m14">for(i = 0; i &lt; 5; i++){
+    document.write(i + ' ');
+}</code></pre> 
+                                <p>
+                                    <span class="lead">Output </span>
+                                </p>
+
+                                <!-- result -->
+                                <div class="code-container">
+                                    <div id="textArea-m14" class="d-none mb-3">
+                                        <textarea name="" id="js-m14" cols="30" rows="5" 
+                                        class="form-control code-textarea" oninput="reload();" 
+                                        onkeydown="check_tab(this, event);"></textarea>
+                                    </div>
+                                    <div class="result">
+                                        <div class="">
+                                            <span>0 1 2 3 4</span>
+                                        </div>
+                                        <iframe id="result-m14" class="d-none"></iframe>
+                                    </div>
+                                </div>
+
+                                <br><br><code class="code-tag">while</code> loop iterates the element for the infinite number of times. It should be used if number of iteration is not known.
+                                <br><pre class="code"><code class="language-js" >while(condition){
+    //code to be executed
+}</code></pre> 
+                            <br><span class="lead">Example</span><span onclick="_initDocuments('', '', 'js-m15', 'result-m15'); editToggle('textArea-m15', 'code-m15');" class ="edit-icon-container float-end"><i class="fa-solid fa-pen edit-icon"></i></span>
+                            <br><pre class="code"><code class="language-js" id="code-m15">let i = 0;
+while(i &lt; 5){
+    document.write(i + ' ');
+    i++;
+}</code></pre> 
+                                <p>
+                                    <span class="lead">Output </span>
+                                </p>
+
+                                <!-- result -->
+                                <div class="code-container">
+                                    <div id="textArea-m15" class="d-none mb-3">
+                                        <textarea name="" id="js-m15" cols="30" rows="5" 
+                                        class="form-control code-textarea" oninput="reload();" 
+                                        onkeydown="check_tab(this, event);"></textarea>
+                                    </div>
+                                    <div class="result">
+                                        <div class="">
+                                            <span> 0 1 2 3 4</span>
+                                        </div>
+                                        <iframe id="result-m15" class="d-none"></iframe>
+                                    </div>
+                                </div>
+                                
+                                <br><br><code class="code-tag">do while</code> iterates the elements for the infinite number of times like while loop. But, code is executes at least once whether condition is true or false.
+                                <br><pre class="code"><code class="language-js" >do{
+    //code to be executed
+}while(condition);</code></pre> 
+                            <br><span class="lead">Example</span><span onclick="_initDocuments('', '', 'js-m16', 'result-m16'); editToggle('textArea-m16', 'code-m16');" class ="edit-icon-container float-end"><i class="fa-solid fa-pen edit-icon"></i></span>
+                            <br><pre class="code"><code class="language-js" id="code-m16">let i = 0;
+do{
+document.write(i + " ");
+i++;
+}while(i &lt; 5)</code></pre> 
+                                <p>
+                                    <span class="lead">Output </span>
+                                </p>
+
+                                <!-- result -->
+                                <div class="code-container">
+                                    <div id="textArea-m16" class="d-none mb-3">
+                                        <textarea name="" id="js-m16" cols="30" rows="5" 
+                                        class="form-control code-textarea" oninput="reload();" 
+                                        onkeydown="check_tab(this, event);"></textarea>
+                                    </div>
+                                    <div class="result">
+                                        <div class="">
+                                            <span> 0 1 2 3 4</span>
+                                        </div>
+                                        <iframe id="result-m16" class="d-none"></iframe>
+                                    </div>
+                                </div>
+                            </p>
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <a onclick="prev(this)" class="btn btn-3 mt-5"><span class=""><i class="fa-solid fa-arrow-left-long text-red"></i>
+                                </span> </a>
+                                <a onclick="next(this)" class="btn btn-3 mt-5">  <span class=""><i
+                                    class="fa-solid fa-arrow-right text-red"></i></span></a>
+                            </div>
+                        </span>
+                        <span class="d-none">
+                            <h1><strong>JS <span class="text-red">Functions</span></strong></h1>
+                            <p class="p-content">
+                                <br><br>Javascript functions are one of the fundamental building blocks of code.
+                                <br><br>It is a set of statements that performs a task or produces a value.
+                                <br><br>It is executed when it is invoked(called) by something.
+
+                                <br><br><br><span class="lead"><strong>Function Definition</strong></span>
+                                <br><br> Javascript function is defined or declared using the <code class="code-tag">function</code> keyword followed by: 
+                                <br><br> <strong>The name of the function</strong> 
+                                <br><br> <strong>A list of parameters (optional) enclosed in parentheses <code class="code-tag">()</code> . Multiple parameters are separated by comma <code class="code-tag">,</code> .</strong>
+                                <br><br> <strong>The block of codes or the statements enclosed in curly braces <code class="code-tag">{}</code> .</strong>  
+                                <br><br><pre class="code"><code class="language-js" >function functionName(parameter){
+    //code to be executed
+}</code></pre>                   
+                                <br><br>Parameters act as placeholder variables inside the function.
+                                <br><br>When the function is called, the variables are assigned to the arguments (values) provided when the function is called.
+                                <br><br><span class="lead">Example</span><span onclick="_initDocuments('', '', 'js-m17', 'result-m17'); editToggle('textArea-m17', 'code-m17');" class ="edit-icon-container float-end"><i class="fa-solid fa-pen edit-icon"></i></span>
+                                <br><pre class="code"><code class="language-js" id="code-m17">function demo(str){
+    document.write(str);
+}
+
+demo('Hello World');</code></pre> 
+                                <br><p>
+                                    <span class="lead">Output </span>
+                                </p>
+
+                                <!-- result -->
+                                <div class="code-container">
+                                    <div id="textArea-m17" class="d-none mb-3">
+                                        <textarea name="" id="js-m17" cols="30" rows="5" 
+                                        class="form-control code-textarea" oninput="reload();" 
+                                        onkeydown="check_tab(this, event);"></textarea>
+                                    </div>
+                                    <div class="result">
+                                        <div class="">
+                                            <span>Hello World</span>
+                                        </div>
+                                        <iframe id="result-m17" class="d-none"></iframe>
+                                    </div>
+                                </div>
+                                
+                                <br><br><span class="lead"><strong>Call a function</strong></span>
+                                <br><br>Function will only be executed when they are called or invoked. A function can be call when an event happens most commonly when a button is clicked.
+                                <br><br><span class="lead">Example</span>
+                                <br><pre class="code"><code class="language-js" >function numberSquare(number){
+    document.write(number * number);
+}</code></pre> 
+                                <p>
+                                    <span class="lead">Output </span>
+                                </p>
+
+                                <!-- result -->
+                                <div class="code-container">
+                                    <div class="d-none mb-3">
+                                        
+                                    </div>
+                                    <div class="result">
+                                        <div class="">
+                                            <button onclick="numberSquare(this, 4)" style="padding: 3px">Square of number 4 </button>
+                                            <br><h5></h5>
+                                        </div>
+                                        <iframe id="result-m15" class="d-none"></iframe>
+                                    </div>
+                                </div>
+                                
+                                <br><br><span class="lead"><strong>The return statement</strong></span>
+                                <br><br>The <code class="code-tag">return</code> statement is used in a function to stop its execution and to return a value to the function caller.
+                                <br><br><span class="lead">Example</span><span onclick="_initDocuments('', '', 'js-m18', 'result-m18'); editToggle('textArea-m18', 'code-m18');" class ="edit-icon-container float-end"><i class="fa-solid fa-pen edit-icon"></i></span>
+                                <br><pre class="code"><code class="language-js" id="code-m18">function numberSquare(number){
+    return number * number;
+}
+document.write(numberSquare(4));</code></pre> 
+                                <p>
+                                    <span class="lead">Output </span>
+                                </p>
+
+                                <!-- result -->
+                                <div class="code-container">
+                                    <div id="textArea-m18" class="d-none mb-3">
+                                        <textarea name="" id="js-m18" cols="30" rows="5" 
+                                        class="form-control code-textarea" oninput="reload();" 
+                                        onkeydown="check_tab(this, event);"></textarea>
+                                    </div>
+                                    <div class="result">
+                                        <div class="">
+                                            <span> 16 </span>
+                                        </div>
+                                        <iframe id="result-m18" class="d-none"></iframe>
+                                    </div>
+                                </div>
+
+                                <br><br><span class="lead"><strong>Function Scope</strong></span>
+                                <br><br><strong>Local variables</strong> are declared and can only be used inside the function.
+                                <br><br>If a variable is used outside the function, the value data type is <code class="code-tag">undefined</code>.
+                                <br><br><span class="lead">Example</span>
+                                <br><pre class="code"><code class="language-js">function numberSquare(){
+    let number = 4;
+    //variable number accessible
+    document.write(number * number);
+}
+//the variable unaccessible
+document.write(number);</code></pre> 
+
+                                <br><br><strong>Global variables</strong> can be used by any functions.
+                                <br><br><strong>Global variables</strong> are variables declared outside a function.
+                                <br><br><span class="lead">Example</span>
+                                <br><pre class="code"><code class="language-js">let number = 4;
+function numberSquare(){
+    //variable number accessible
+    document.write(number * number);
+}
+//variable number accessible
+document.write(number);</code></pre> 
+
+                            </p>
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <a onclick="prev(this)" class="btn btn-3 mt-5"><span class=""><i class="fa-solid fa-arrow-left-long text-red"></i>
+                                </span> </a>
+                                <a onclick="next(this)" class="btn btn-3 mt-5">  <span class=""><i
+                                    class="fa-solid fa-arrow-right text-red"></i></span></a>
+                            </div>
+                        </span>
+                        <span class="d-none">
+                            <h1><strong>JS <span class="text-red">Strings</span></strong></h1>
+                            <p class="p-content">
+                                <br><br>Javascript string is set of characters enclosed in quotes.
+                                <br><br>Javascript string can be enclosed in double quotes. Use single quotes if your string container double quotes.
+                                <br><br><span class="lead">Example</span>
+                                <br><pre class="code"><code class="language-js" >let str1 = "Hello World";
+let str2 = 'Hello "World"';</code></pre>                   
+                                <br>Javascript string can also be enclosed in single quotes. Use double quotes if your string contains single quote.
+                                <br><br><span class="lead">Example</span>
+                                <br><pre class="code"><code class="language-js" >let str1 = 'Hello World';
+let str2 = "Hello 'World";</code></pre>                   
+
+                                <br><span class="lead"><strong>Concatenating strings</strong></span>
+                                <br><br> To concatenate or to add string use the <code class="code-tag">+</code> operator;
+                                <br><br><span class="lead">Example</span>
+                                <br><pre class="code"><code class="language-js" >let str1 = "Hello ";
+let str2 = 'World"';
+document.write(str1 + str2); //output Hello World</code></pre> 
+                                <br> You can also use concatenate strings using the <code class="code-tag">+=</code> operator;
+                                <br><br><span class="lead">Example</span>
+                                <br><pre class="code"><code class="language-js" >let str = "Hello ";
+str += 'World"';
+document.write(str1); //output Hello World</code></pre> 
+
+                                <br><span class="lead"><strong>Escaping characters</strong></span>
+                                <br><br> Escaping characters is crucial in handling strings.
+                                <br><br> It helps us make sure that our strings are recognized as pieces of text, not as part of the code.
+                                <br><br> To escape a characters, use a <code class="code-tag">\</code> right before the character.
+                                <br><br><span class="lead">Example</span>
+                                <br><pre class="code"><code class="language-js" >let str = "Hello \'World\'"; //escaping '</code></pre> 
+                                
+                                <br><br><span class="lead"><h4><strong>String Methods</strong></h4></span>
+                                <br>String methods helps you when working with string.
+                                <br><br><span class="lead"><strong>Getting string length</strong></span>
+                                <br><br>To get the length or the number of characters in a string we use the <code class="code-tag">length</code> property.
+                                <br><br><span class="lead">Example</span>
+                                <br><pre class="code"><code class="language-js" >let str = "Hello World";
+document.write(str.length);//output 11</code></pre> 
+                                <br><br>The length property is useful, for instance, you can use it to count how many characters a user has entered in one of their text fields.
+                                <br><br><span class="lead"><strong>Retrieving a character</strong></span>
+                                <br><br>We can retrieve a character from a string using the <code class="code-tag">[]</code>. Simply put a <code class="code-tag">[]</code> after the variable name and write a number inside them.
+                                <br><br><span class="lead">Example</span>
+                                <br><pre class="code"><code class="language-js" >let str = "Hello World";
+document.write(str[4]);//output o</code></pre>
+                                <br><br>You may have expect that <code class="code-tag">str[4]</code> would return the character "l" but instead it returned the character "o" it is because Javascript count from 0 not from 1. 
+                                <br><br><span class="lead"><strong>Finding string position</strong></span>
+                                <br><br>This can be done using the <code class="code-tag">indexOf()</code> method. It returns the index of the first occurrence of a substring in a string.
+                                <br><br><span class="lead">Example</span>
+                                <br><pre class="code"><code class="language-js" >let str = "Please locate where 'locate' occurs!";
+let strPos = str.indexOf("locate");
+document.write(strPos); //output 7</code></pre> 
+                                <br><br>While the <code class="code-tag">indexOf()</code> method. It returns the index of the last occurrence of a substring in a string.
+                                <br><br><span class="lead">Example</span>
+                                <br><pre class="code"><code class="language-js" >let str = "Please locate where 'locate' occurs!";
+let strPos = str.lastIndexOf("locate");
+document.write(strPos); //output 21</code></pre> 
+                                <br><br>Both <code class="code-tag">indexOf()</code> and <code class="code-tag">lastIndexOf()</code> returns "-1" if there is no occurrence found.
+
+                                <br><br><span class="lead"><strong>Searching a string</strong></span>
+                                <br><br>The <code class="code-tag">search()</code> method works similarly with the <code class="code-tag">indexOf()</code> method. The only difference is that <code class="code-tag">indexOf()</code> cannot take regular expressions as parameter.
+                                <br><br>The <code class="code-tag">search()</code> method is sensitively cased. To search a text insensitively, user the regular expression with the <code class="code-tag">/i</code> flag.
+                                <br><br><span class="lead">Example</span>
+                                <br><pre class="code"><code class="language-js" >let str = "Hello World";
+let strPos = str.search(/world/i); //case insensitive  output 0
+let strPos1 = str.search("world"); //case sensitive   output -1</code></pre> 
+                                <br><br>Don't forget the counting starts from 0. The <code class="code-tag">search()</code> method returns "-1" if the text is not found in the string.
+                                
+                                <br><br><span class="lead"><strong>Extracting a string</strong></span>
+                                <br><br>We can extract a substring from a string using the:
+                                <br><br><code class="code-tag">slice()</code> method extracts a section of a string and returns it as a new string. It does not modified the original string. It takes two numerical parameters: start position andd the end position. It can take negative values.
+                                <br><br><span class="lead">Example</span><span onclick="_initDocuments('', '', 'js-m20', 'result-m20'); editToggle('textArea-m20', 'code-m20');" class ="edit-icon-container float-end"><i class="fa-solid fa-pen edit-icon"></i></span>
+                            <br><pre class="code"><code class="language-js" id="code-m20">let str = "Hello World";
+let result = str.slice(0, 5);
+document.write(result);</code></pre> 
+                                <p>
+                                    <span class="lead">Output </span>
+                                </p>
+
+                                <!-- result -->
+                                <div class="code-container">
+                                    <div id="textArea-m20" class="d-none mb-3">
+                                        <textarea name="" id="js-m20" cols="30" rows="5" 
+                                        class="form-control code-textarea" oninput="reload();" 
+                                        onkeydown="check_tab(this, event);"></textarea>
+                                    </div>
+                                    <div class="result">
+                                        <div class="">
+                                            <span>Hello</span>
+                                        </div>
+                                        <iframe id="result-m20" class="d-none"></iframe>
+                                    </div>
+                                </div>
+
+                                <br><br><code class="code-tag">substring()</code> works the same as the <code class="code-tag">slice()</code> method. The only difference is that the <code class="code-tag">substring()</code> method cannot take negative values.
+                                <br><br><span class="lead">Example</span><span onclick="_initDocuments('', '', 'js-m21', 'result-m21'); editToggle('textArea-m21', 'code-m21');" class ="edit-icon-container float-end"><i class="fa-solid fa-pen edit-icon"></i></span>
+                            <br><pre class="code"><code class="language-js" id="code-m21">let str = "Hello World";
+let result = str.substring(0, 5);
+document.write(result);</code></pre> 
+                                <p>
+                                    <span class="lead">Output </span>
+                                </p>
+
+                                <!-- result -->
+                                <div class="code-container">
+                                    <div id="textArea-m21" class="d-none mb-3">
+                                        <textarea name="" id="js-m21" cols="30" rows="5" 
+                                        class="form-control code-textarea" oninput="reload();" 
+                                        onkeydown="check_tab(this, event);"></textarea>
+                                    </div>
+                                    <div class="result">
+                                        <div class="">
+                                            <span>Hello</span>
+                                        </div>
+                                        <iframe id="result-m21" class="d-none"></iframe>
+                                    </div>
+                                </div>
+
+                                <br><br><code class="code-tag">substr()</code> method extracts a section of a string, from the specified index. It takes two numerical parameters: the starting index, anf the length of the string t be extracted.
+                                <br><br><span class="lead">Example</span><span onclick="_initDocuments('', '', 'js-m22', 'result-m22'); editToggle('textArea-m22', 'code-m22');" class ="edit-icon-container float-end"><i class="fa-solid fa-pen edit-icon"></i></span>
+                            <br><pre class="code"><code class="language-js" id="code-m22">let str = "Hello World";
+let result = str.substr(6, 5);
+document.write(result);</code></pre> 
+                                <p>
+                                    <span class="lead">Output </span>
+                                </p>
+
+                                <!-- result -->
+                                <div class="code-container">
+                                    <div id="textArea-m22" class="d-none mb-3">
+                                        <textarea name="" id="js-m22" cols="30" rows="5" 
+                                        class="form-control code-textarea" oninput="reload();" 
+                                        onkeydown="check_tab(this, event);"></textarea>
+                                    </div>
+                                    <div class="result">
+                                        <div class="">
+                                            <span>World</span>
+                                        </div>
+                                        <iframe id="result-m22" class="d-none"></iframe>
+                                    </div>
+                                </div>
+
+                                <br><br><code class="code-tag">replace()</code> method replaces the specified text inside a string and returns a new string. It does not modified the original string. It takes two parameters : the string to replace and the string replacement.
+                                <br><br>To replace all the matching strings, use a regular expression with the <code class="code-tag">/g</code>.
+                                <br><br><span class="lead">Example</span><span onclick="_initDocuments('', '', 'js-m23', 'result-m23'); editToggle('textArea-m23', 'code-m23');" class ="edit-icon-container float-end"><i class="fa-solid fa-pen edit-icon"></i></span>
+                            <br><pre class="code"><code class="language-js" id="code-m23">let str = "Hello World";
+let result = str.replace("o", "i"); //first occurrence
+document.write(result + "&lt;br>");
+result = str.replace(/o/g, "i"); //all occurrence
+document.write(result);</code></pre> 
+                                <p>
+                                    <span class="lead">Output </span>
+                                </p>
+
+                                <!-- result -->
+                                <div class="code-container">
+                                    <div id="textArea-m23" class="d-none mb-3">
+                                        <textarea name="" id="js-m23" cols="30" rows="5" 
+                                        class="form-control code-textarea" oninput="reload();" 
+                                        onkeydown="check_tab(this, event);"></textarea>
+                                    </div>
+                                    <div class="result">
+                                        <div class="">
+                                            <span>Helli World</span>
+                                            <br><span>Helli Wirld</span>
+                                        </div>
+                                        <iframe id="result-m23" class="d-none"></iframe>
+                                    </div>
+                                </div>
+
+                                <br><br><code class="code-tag">toUpperCase()</code> and <code class="code-tag">toLowerCase()</code> method replaces the specified text inside a string and returns a new string. It does not modified the original string. It takes two parameters : the string to replace and the string replacement.
+                                <br><br>The <code class="code-tag">toUpperCase()</code> methods convert the string to upper case.
+                                <br><br>The <code class="code-tag">toLowerCase()</code> methods convert the string to lower case.
+                                <br><br><span class="lead">Example</span><span onclick="_initDocuments('', '', 'js-m24', 'result-m24'); editToggle('textArea-m24', 'code-m24');" class ="edit-icon-container float-end"><i class="fa-solid fa-pen edit-icon"></i></span>
+                            <br><pre class="code"><code class="language-js" id="code-m24">let str = "Hello World";
+let result = str.toLowerCase();
+document.write(result + "&lt;br>");
+result = str.toUpperCase();
+document.write(result);</code></pre> 
+                                <p>
+                                    <span class="lead">Output </span>
+                                </p>
+
+                                <!-- result -->
+                                <div class="code-container">
+                                    <div id="textArea-m24" class="d-none mb-3">
+                                        <textarea name="" id="js-m24" cols="30" rows="5" 
+                                        class="form-control code-textarea" oninput="reload();" 
+                                        onkeydown="check_tab(this, event);"></textarea>
+                                    </div>
+                                    <div class="result">
+                                        <div class="">
+                                            <span>Helli World</span>
+                                            <br><span>Helli Wirld</span>
+                                        </div>
+                                        <iframe id="result-m24" class="d-none"></iframe>
+                                    </div>
+                                </div>
+
+
+                            </p>
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <a onclick="prev(this)" class="btn btn-3 mt-5"><span class=""><i class="fa-solid fa-arrow-left-long text-red"></i>
+                                </span> </a>
+                                <a onclick="next(this)" class="btn btn-3 mt-5">  <span class=""><i
+                                    class="fa-solid fa-arrow-right text-red"></i></span></a>
+                            </div>
+                        </span>
+                        <span class="d-none">
+                            <h1><strong>JS <span class="text-red">Numbers</span></strong></h1>
+                            <p class="p-content">
+                                <br><br>Javascript number object provides methods that allows us to work with numerical values.
+                                <br><br><span class="lead"><strong>Number methods</strong></span>
+                                <br><br>The <code class="code-tag">Number.isInteger()</code> method returns true if the passed argument is an integer.
+                                <br><br><span class="lead">Example</span>
+                                <br><pre class="code"><code class="language-js" >let isInteger1 = Number.isInteger(500); //returns true
+let isInteger2 = Number.isInteger(5.1); //returns false
+let isInteger3 = Number.isInteger("Hello World"); // returns false</code></pre>   
+               
+                                <br><br>The <code class="code-tag">parseInt()</code> method takes a string argument and returns an integer based on the given value.
+                                <br><br><span class="lead">Example</span>
+                                <br><pre class="code"><code class="language-js" >let num1 = parseInt("3"); //return 3
+let num2 = parseInt("3.1"); //returns 3
+let num3 = parseInt("Hello World"); //return Nan</code></pre>                   
+
+                                <br><br>The <code class="code-tag">parseFloat()</code> method takes a string argument and returns a floating point number.
+                                <br><br><span class="lead">Example</span>
+                                <br><pre class="code"><code class="language-js" >let num1 = parseInt("3.4"); //return 3.4
+let num2 = parseInt("1.2345"); //returns 1.2345</code></pre>
+
+                                <br><br>The <code class="code-tag">toString()</code> method returns a string representing the specified number
+                                <br><br><span class="lead">Example</span>
+                                <br><pre class="code"><code class="language-js" >let num1 = (1).toString(); //return "1"
+let num2 = (1.234).toString(); //returns "1.234"</code></pre>
+
+                            </p>
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <a onclick="prev(this)" class="btn btn-3 mt-5"><span class=""><i class="fa-solid fa-arrow-left-long text-red"></i>
+                                </span> </a>
+                                <a onclick="next(this)" class="btn btn-3 mt-5">  <span class=""><i
+                                    class="fa-solid fa-arrow-right text-red"></i></span></a>
+                            </div>
+                        </span>
+                        <span class="d-none">
+                            <h1><strong>JS <span class="text-red">Arrays</span></strong></h1>
+                            <p class="p-content">
+                                <br><br>Javascript array is an object that represents a collection of data.
+                                <br><br><span class="lead"><strong>Array methods</strong></span>
+                                <br><br>The <code class="code-tag">forEach()</code> method is another way to loop over an array, or access each element's data. It executes a callback function for each array element.
+                                <br><br><span class="lead">Example</span><span onclick="_initDocuments('', '', 'js-m25', 'result-m25'); editToggle('textArea-m25', 'code-m25');" class ="edit-icon-container float-end"><i class="fa-solid fa-pen edit-icon"></i></span>
+                                <br><pre class="code"><code class="language-js" id="code-m25" >let persons = ['person1', 'person2', 'person3'];
+persons.forEach(function(value, index, listOfPersons){
+    document.write(value + "&lt;br>");
+});</code></pre>   
+                                <p>
+                                    <span class="lead">Output </span>
+                                </p>
+
+                                <!-- result -->
+                                <div class="code-container">
+                                    <div id="textArea-m25" class="d-none mb-3">
+                                        <textarea name="" id="js-m25" cols="30" rows="5" 
+                                        class="form-control code-textarea" oninput="reload();" 
+                                        onkeydown="check_tab(this, event);"></textarea>
+                                    </div>
+                                    <div class="result">
+                                        <div class="">
+                                            <span>person1</span>
+                                            <br><span>person2</span>
+                                            <br><span>person3</span>
+                                        </div>
+                                        <iframe id="result-m25" class="d-none"></iframe>
+                                    </div>
+                                </div>
+                                
+
+                                <br><br>The <code class="code-tag">join()</code> method creates and returns a new string by combining all the elements. The elements are separated by the specified separator character. If none is specified, it separates the elements with commas.
+                                <br><br><span class="lead">Example</span><span onclick="_initDocuments('', '', 'js-m26', 'result-m26'); editToggle('textArea-m26', 'code-m26');" class ="edit-icon-container float-end"><i class="fa-solid fa-pen edit-icon"></i></span>
+                                <br><pre class="code"><code class="language-js" id="code-m26" >let persons = ['person1', 'person2', 'person3'];
+let result = persons.join("-");
+document.write(result);</code></pre>   
+                                <p>
+                                    <span class="lead">Output </span>
+                                </p>
+
+                                <!-- result -->
+                                <div class="code-container">
+                                    <div id="textArea-m26" class="d-none mb-3">
+                                        <textarea name="" id="js-m26" cols="30" rows="5" 
+                                        class="form-control code-textarea" oninput="reload();" 
+                                        onkeydown="check_tab(this, event);"></textarea>
+                                    </div>
+                                    <div class="result">
+                                        <div class="">
+                                            <span>person1-person2-person3</span>
+                                        </div>
+                                        <iframe id="result-m26" class="d-none"></iframe>
+                                    </div>
+                                </div>
+
+                                <br><br>The <code class="code-tag">split()</code> method is used to convert string to an array. It takes a separator as its argument.
+                                <br><br><span class="lead">Example</span><span onclick="_initDocuments('', '', 'js-m27', 'result-m27'); editToggle('textArea-m27', 'code-m27');" class ="edit-icon-container float-end"><i class="fa-solid fa-pen edit-icon"></i></span>
+                                <br><pre class="code"><code class="language-js" id="code-m27" >let str = "person1 person2 person3";
+let persons = str.split(" ");
+document.write(persons.join(" - "));</code></pre>   
+                                <p>
+                                    <span class="lead">Output </span>
+                                </p>
+
+                                <!-- result -->
+                                <div class="code-container">
+                                    <div id="textArea-m27" class="d-none mb-3">
+                                        <textarea name="" id="js-m27" cols="30" rows="5" 
+                                        class="form-control code-textarea" oninput="reload();" 
+                                        onkeydown="check_tab(this, event);"></textarea>
+                                    </div>
+                                    <div class="result">
+                                        <div class="">
+                                            <span>person1 - person2 - person3</span>
+                                        </div>
+                                        <iframe id="result-m27" class="d-none"></iframe>
+                                    </div>
+                                </div>
+
+                                <br><br>The <code class="code-tag">indexOf()</code> method returns the index of the first occurrent of an item in the array.
+                                <br><br>The <code class="code-tag">lastIndexOf()</code> method returns the index of the last occurrent of an item in the array.
+                                <br><br><span class="lead">Example</span><span onclick="_initDocuments('', '', 'js-m28', 'result-m28'); editToggle('textArea-m28', 'code-m28');" class ="edit-icon-container float-end"><i class="fa-solid fa-pen edit-icon"></i></span>
+                                <br><pre class="code"><code class="language-js" id="code-m28" >let persons = ['person1', 'person2', 'person3', 'person1'];
+let firstPos = persons.indexOf("person1");
+document.write(firstPos + "&lt;br>");
+let lastPos = persons.lastIndexOf("person1");
+document.write(lastPos);</code></pre>   
+                                <p>
+                                    <span class="lead">Output </span>
+                                </p>
+
+                                <!-- result -->
+                                <div class="code-container">
+                                    <div id="textArea-m28" class="d-none mb-3">
+                                        <textarea name="" id="js-m28" cols="30" rows="5" 
+                                        class="form-control code-textarea" oninput="reload();" 
+                                        onkeydown="check_tab(this, event);"></textarea>
+                                    </div>
+                                    <div class="result">
+                                        <div class="">
+                                            <span>0</span>
+                                            <br><span>3</span>
+                                        </div>
+                                        <iframe id="result-m28" class="d-none"></iframe>
+                                    </div>
+                                </div>
+
+                                <br><br>The <code class="code-tag">includes()</code> method returns true if a certain value is included in an array.
+
+                            </p>
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <a onclick="prev(this)" class="btn btn-3 mt-5"><span class=""><i class="fa-solid fa-arrow-left-long text-red"></i>
+                                </span> </a>
+                                <a onclick="next(this)" class="btn btn-3 mt-5">  <span class=""><i
+                                    class="fa-solid fa-arrow-right text-red"></i></span></a>
+                            </div>
+                        </span>
+                        <span class="d-none">
+                            <h1><strong>JS <span class="text-red">Dates</span></strong></h1>
+                            <p class="p-content">
+                                <br><br>Javascript date object allows you to work with dates. You can display timer on the webpage by the help of Javascript.
+                                <br><br><span class="lead"><strong>Date constructor</strong></span>
+                                <br><br>The <code class="code-tag">new Date()</code> constructor returns a <code class="code-tag">date</code> object. 
+                                <br><br>These are some of the basic forms of the date constructor:
+                                <br><br><code class="code-tag">new Date()</code> creates a Date representing the current date.
+                                <br><pre class="code"><code class="language-js">let date = new Date();</code></pre>   
+                                <br><code class="code-tag">new Date(milliseconds)</code> creates a Date object representing the date <code class="code-tag">milliseconds</code> since January 1, 1970.
+                                <br><pre class="code"><code class="language-js">let date = new Date(86400000);</code></pre> 
+                                <br><code class="code-tag">new Date(dateString)</code> creates a Date object representing the date from a date string.
+                                <br><pre class="code"><code class="language-js">let date = new Date("June 30, 2000");</code></pre> 
+
+                                <br><br><span class="lead"><strong>Date set methods</strong></span>
+                                <br><br>The <code class="code-tag">Date.setTime()</code> sets the date to the time represented by a number of milliseconds since January 1, 1970.
+                                <br><br>The <code class="code-tag">Date.setFullYear()</code> sets the year for specified date.
+                                <br><br>The <code class="code-tag">Date.setMonth()</code> sets the month for specified date.
+                                <br><br>The <code class="code-tag">Date.setDate()</code> sets the day of the month for specified date.
+                                <br><br>The <code class="code-tag">Date.setHours()</code> sets the hours for specified date.
+                                <br><br>The <code class="code-tag">Date.setMinutes()</code> sets the minutes for specified date.
+                                <br><br>The <code class="code-tag">Date.setSeconds()</code> sets the seconds for specified date.
+                                <br><br>The <code class="code-tag">Date.setMilliseconds()</code> sets the milliseconds for specified date.
+                                
+                                <br><br><code class="code-tag">set</code> to assign and <code class="code-tag">get</code> to retrieve
+                                <br><br><span class="lead">Example</span>
+                                <br><pre class="code"><code class="language-js">//lets create a simple digital clock using dates
+setInterval(simpleDigitalClock, 1000); //calls simpleDigitalClock() function every 1 second
+function simpleDigitalClock(){
+    let date = new Date();
+    let hour = date.getHours();
+    let minutes = date.getMinutes();
+    let seconds = date.getSeconds();
+                                    
+    document.getElementById('digitalClock').innerHTML = formatTime(hour) + " : " + formatTime(minutes) + " : " + formatTime(seconds);
+}
+function formatTime(time){
+    return time &lt; 10 ? "0" + time : time;
+}</code></pre>   
+                                <p>
+                                    <span class="lead">Output </span>
+                                </p>
+
+                                <!-- result -->
+                                <div class="code-container">
+                                    <div class="result">
+                                        <div class="">
+                                            <span id="digitalClock"></span>
+                                        </div>
+                                        <iframe id="result-m26" class="d-none"></iframe>
+                                    </div>
+                                </div>
+
+                            </p>
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <a onclick="prev(this)" class="btn btn-3 mt-5"><span class=""><i class="fa-solid fa-arrow-left-long text-red"></i>
+                                </span> </a>
+                                <a onclick="next(this)" class="btn btn-3 mt-5">  <span class=""><i
+                                    class="fa-solid fa-arrow-right text-red"></i></span></a>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <script src="../htmlPage/js/content.js"></script><!--htmlPage js-->
+    <script src="../editor/js/editor.js"></script><!--Editor js-->
+    <script src="./js/examples.js"></script><!--Examples js-->
+    <script src="./js/prism.js"></script>
+    <script>initLearnType('J');</script>
+</body>
+</html>

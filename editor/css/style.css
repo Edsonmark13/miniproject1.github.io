@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.editor {
+    margin-top: 100px;
+}
+.form-control{
+    background-color: rgb(41, 40, 40);
+    color: white;
+}
+.form-control:focus{
+    background-color: rgb(41, 40, 40);
+    color: white;
+}
+
+textarea{
+    font-family: monospace;
+    font-size: 15px;
+    overflow: auto;
+}
+
+.result{
+    height: 500px;
+    width: 100%;
+}
+iframe{
+    width: 100%;
+    height: 100%
+}
+
+i{
+    padding: 5px;
+    cursor: pointer;
+}
+.layout-active{
+    background-color: red;
+    color: white;
+}
+.learn-icon{
+    font-size: 20px;
+    cursor: default;
+}
+
+.learn-icon-html:hover{
+    color: #e94f07;
+}
+.learn-icon-css:hover{
+    color: #0096c7;
+}
+.learn-icon-js:hover{
+    color: #05ac1c;
+}
+
+.layout-container{
+    border: 1px solid #e94f07;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.layout{
+    padding: 5px;
+    color: #e94f07;
+}
+.layout-left{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.layout-right{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.layout-active{
+    background-color: #e94f07;
+    color: #ffffff;
+}

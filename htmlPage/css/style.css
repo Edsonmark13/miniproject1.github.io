@@ -1,0 +1,180 @@
+.btn-3 {
+    border: 1px solid #f7631f;
+}
+
+.btn-3:hover {
+    border: 1px solid #f7631f;
+}
+
+.btn-3:active {
+    border: 1px solid #f7631f;
+}
+
+/* https://dev.to/shantanu_jana/circular-progress-bar-using-html-and-css-1oda#:~:text=Circular%20Progress%20Bar%20is%20a,simple%20CSS%20circle%20progress%20bar. */
+@keyframes growProgressBar {
+
+    0%,
+    33% {
+        --pgPercentage: 0;
+    }
+
+    100% {
+        --pgPercentage: var(--value);
+    }
+}
+
+@property --pgPercentage {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 0;
+}
+
+div[role="progressbar"] {
+    --size: 12rem;
+    --fg: #f7631f;
+    --bg: #def;
+    --pgPercentage: var(--value);
+    animation: growProgressBar 3s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background:
+        radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+        conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(var(--size) / 5);
+    color: var(--fg);
+}
+
+div[role="progressbar"]::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+}
+
+.main-content-container {
+    margin-top: -18px;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: rgb(233, 231, 231);
+}
+
+.topic-container {
+    width: 100%;
+    position: relative;
+}
+
+.sidebar ul {
+    margin-left: -30px;
+    padding: 10px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.sidebar ul li {
+    padding: 5px;
+    padding-left: 20px;
+}
+
+.sidebar ul li:hover {
+    width: 120%;
+    box-shadow: 3px 3px 30px 0px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 3px 3px 30px 0px rgba(82, 81, 81, 0.16);
+    -moz-box-shadow: 3px 3px 30px 0px rgba(82, 81, 81, 0.16);
+    background-color: rgb(185, 185, 185);
+    z-index: 999;
+}
+
+.li-normal {
+    width: 100%;
+}
+
+.li-active {
+    width: 120%;
+    box-shadow: 3px 3px 30px 0px rgba(82, 81, 81, 0.16);
+    -webkit-box-shadow: 3px 3px 30px 0px rgba(82, 81, 81, 0.16);
+    -moz-box-shadow: 3px 3px 30px 0px rgba(82, 81, 81, 0.16);
+    background-color: rgb(185, 185, 185);
+}
+
+.li-icon {
+    color: rgba(90, 88, 88, 0.486)
+}
+
+.li-icon-active {
+    color: #f7631f;
+}
+
+.content {
+    width: 100%;
+    height: 120vh;
+    overflow: scroll;
+}
+
+.p-content {
+    font-size: 16px;
+}
+
+.code-tag {
+    background-color: #e4e3e3;
+    padding: 5px;
+}
+
+.edit-icon {
+    cursor: pointer;
+    opacity: 60%;
+    font-size: 15px;
+}
+
+.edit-icon:hover {
+    color: #f7631f;
+    opacity: 100%;
+}
+
+.code-container {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(233, 231, 231);
+}
+
+.code-textarea {
+    width: 100%;
+}
+
+textarea pre {
+    font-family: monospace;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.result a {
+    color: blue;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+  ::-webkit-scrollbar {
+    width: 12px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(33, 37, 41, 0); 
+  }
