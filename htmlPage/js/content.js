@@ -13,7 +13,7 @@ for (let i = 0; i < contents.childElementCount; i++) {
     contents.children[i].classList.add('d-none');
 }
 
-currentTopicIndex = contents.childElementCount - 1; //delete this
+//currentTopicIndex = contents.childElementCount - 1; //delete this
 changeMenu(false);
 updateProgress();
 
