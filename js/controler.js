@@ -17,7 +17,11 @@ function changeImage(el){
 
 let testimonialUsers = document.getElementById("users");
 let testimonialContainer = document.getElementById("testimonial-list");
-
+let testimonials = [
+  "I have been trying to learn html and javascript for the past few days, but I couldn't understand a thing. I was about to give up when I found WeLearn. This website is amazing - it walks you through step by step instructions and has a bunch of examples. It's the best way to learn html and JavaScript!",
+  'I have tried many different websites to learn html and javascript, but WeLearn by far is the easiest. The design is clean and the examples are easy to follow. I love that you can see your progress on the site, so you know when you are ready for a new challenge.',
+  "I've tried every css and html tutorial website there is and I just couldn't seem to find the one that worked for me. I am so happy that I found WeLearn.com it is a friendly website with great examples, but it also has all the tutorials you will ever need all in one spot!"
+];
 function getUsers() {
     fetch("https://randomuser.me/api/?results=3")
       .then((results) => {
@@ -35,9 +39,7 @@ function getUsers() {
             testimonialContainerItems+='    <div style="width: 100%;  font-size: 50px;" class="d-flex justify-content-start align-items-start">';
             testimonialContainerItems+='    <span><i class="fa-solid fa-quote-left text-red"></i></span>';
             testimonialContainerItems+='    </div>';
-            testimonialContainerItems+='    <p class="px-5 fs-4">adjalsd asdja skdja lskdja skdj alsdj jakdj alk ladh akdh ajhajsdh shg shfg';
-            testimonialContainerItems+='        shdf sdhgf';
-            testimonialContainerItems+='        sfhashf sj form-checksf sfk hs <br><span class="fs-6">- '+ data.results[i].name.title + '. ' + data.results[i].name.first + " " + data.results[i].name.last+'</span></p>';
+            testimonialContainerItems+='    <p class="px-5 fs-4">' + testimonials[i] +'<br><span class="fs-6">- '+ data.results[i].name.title + '. ' + data.results[i].name.first + " " + data.results[i].name.last+'</span></p>';
             testimonialContainerItems+='    <div style="width: 100%;  font-size: 50px;" class="d-flex justify-content-end align-items-start">';
             testimonialContainerItems+='        <span><i class="fa-solid fa-quote-right text-red"></i></span>';
             testimonialContainerItems+='    </div>';
