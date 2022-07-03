@@ -13,7 +13,73 @@ for (let i = 0; i < contents.childElementCount; i++) {
     contents.children[i].classList.add('d-none');
 }
 
-//currentTopicIndex = contents.childElementCount - 1; //delete this
+
+//#region local storage
+let type = "";
+let isZeroOnTheList = false;
+let isLoadingSavedData = false;
+let UrlLocationSplit = window.location.toString().split('/');
+
+if(UrlLocationSplit.includes('htmlPage')){ initLearnType('H'); }else{ initLearnType('J'); }
+
+//saved in local storage
+function collectData(){
+    if(type != ""){
+        let key = type + 'indexes';
+        let value = localStorage[key] || '';
+        value += "-" + previousTopicIndex.toString();
+
+        saveData(key, value);
+
+        key = type + 'progress';
+        value = progressPercentage;
+        saveData(key, value);
+
+    }
+}
+
+function saveData(key, value){
+    localStorage[key] = value;
+}
+
+function loadData(){
+    let key = type + 'indexes';
+    let value  = localStorage[key] || '';
+    if(value != ""){
+        let values = value.toString().split('-');
+        for(let i = 1; i < values.length; i++){
+            previousTopicIndex = currentTopicIndex;
+            currentTopicIndex = values[i];
+            changeMenu(true);
+            isZeroOnTheList = false;
+        }
+        previousTopicIndex = values[values.length - 1];
+        changeMenu(true);
+   }
+   isLoadingSavedData = false;
+}
+
+function getPrevAndCurIndex(){
+    let key = type + 'indexes';
+    let value  = localStorage[key] || '';
+    console.log(value);
+    if(value != ''){
+        let values = value.toString().split('-');
+        previousTopicIndex = values[1];
+        currentTopicIndex = values[1];
+    }
+}
+
+//init. learn type
+function initLearnType(t){
+    //localStorage.clear();
+    type = t;
+    getPrevAndCurIndex();
+    loadData();
+}
+//#endregion
+
+
 changeMenu(false);
 updateProgress();
 
@@ -116,51 +182,6 @@ function editToggle(id, code) {
     //calling function from editor js
     reload();
 }
-
-let type = "";
-//init. learn type
-function initLearnType(t){
-    localStorage.clear();
-    type = t;
-    loadData();
-}
-
-//saved in local storage
-function collectData(){
-    if(type != ""){
-        let key = type + 'indexes';
-        let value = localStorage[key] || '';
-        value += "-" + previousTopicIndex.toString();
-
-        saveData(key, value);
-
-        key = type + 'progress';
-        value = progressPercentage;
-        saveData(key, value);
-
-    }
-}
-
-function saveData(key, value){
-    localStorage[key] = value;
-}
-
-function loadData(){
-    let key = type + 'indexes';
-    let value  = localStorage[key] || '';
-
-    if(value != ""){
-        let values = value.toString().split('-');
-        for(let i = 1; i < values.length; i++){
-            previousTopicIndex = currentTopicIndex;
-            currentTopicIndex = values[i];
-            changeMenu(true);
-        }
-        previousTopicIndex = values[values.length - 1];
-        changeMenu(true);
-   }
-}
-
 function scroll() { 
     //let y = contents.scrollTop;
     //let i = window.scrollY;
