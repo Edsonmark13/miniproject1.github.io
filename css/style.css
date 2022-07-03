@@ -187,13 +187,12 @@ a {
 }
 
 .code{
-    background-color: #e4e3e3;
+    background-color: #F5F2F0;
     padding: 10px;
 }
 
 /* testimonial */
 .testimonial-container-item {
-    height: 500px;
     width: 100%;
     background-color: white;
     margin: auto;
@@ -243,7 +242,8 @@ a {
     border-radius: 50px;
     border: 1px solid #f7631f;
     text-align: center;
-    margin-top: 10px
+    margin-top: 10px;
+    margin-bottom: 50px
 }
 .icon-container i{
     font-size: 17px;

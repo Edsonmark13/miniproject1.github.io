@@ -49,7 +49,7 @@ function changeMenu(isFinished) {
     if (isFinished) {
         //update the value of the progress bar
        if(!checkTopic(menus.children[previousTopicIndex])){
-            progressValue += 1;;
+            progressValue += 1;
             updateProgress();
             finishedTopics.push(menus.children[previousTopicIndex]);
 
