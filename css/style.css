@@ -22,6 +22,11 @@ body {
 .nav-item {
     padding-left: 15px;
     padding-right: 15px;
+    margin-left: 5px;
+}
+.nav-item-active{
+    background-color: #ebd4ca;
+    border-radius: 50px;
 }
 
 .nav-item:hover {}
