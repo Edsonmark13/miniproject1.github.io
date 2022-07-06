@@ -79,5 +79,5 @@ function activeLayout(layout) {
 }
 
 function getJavascriptCorrectSyntax(jsValue) {
-  return jsValue.replace(/let /gi, "");;
+  return jsValue.replace(/let /gi, "");
 }

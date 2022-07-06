@@ -160,7 +160,7 @@ a {
     padding-bottom: 30px;
 }
 .learn-container-item:hover{
-    background-color: #f0edec;
+    background-color: rgb(185, 185, 185);
 }
 .learn-container-item:hover .learn-icon-html{
     background-color: #e94f07;

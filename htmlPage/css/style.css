@@ -169,13 +169,20 @@ iframe {
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0);
   }
-  
-  ::-webkit-scrollbar {
+textarea::-webkit-scrollbar {
     width: 12px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
     background-color: rgba(0, 0, 0, 0);
   }
   
   ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-color: rgba(33, 37, 41, 0); 
+    background-color: rgba(236, 238, 240, 0); 
+  }
+  iframe::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(0, 3, 7, 0.76); 
   }

@@ -18,6 +18,7 @@ for (let i = 0; i < contents.childElementCount; i++) {
 let type = "";
 let isZeroOnTheList = false;
 let isLoadingSavedData = false;
+let isLoaded = false;
 let UrlLocationSplit = window.location.toString().split('/');
 
 if(UrlLocationSplit.includes('htmlPage')){ initLearnType('H'); }else{ initLearnType('J'); }
@@ -182,12 +183,17 @@ function editToggle(id, code) {
     //calling function from editor js
     reload();
 }
+
 function scroll() { 
     //let y = contents.scrollTop;
     //let i = window.scrollY;
-
-    window.scrollTo(0, 358);
-    contents.scrollTo(0, 0);
-
-    //alert("window: " + i + " content: " + y + "px");
+    console.log(isLoaded);
+    if(isLoaded == true){
+        window.scrollTo(0, 358);
+        contents.scrollTo(0, 0);
+    }else{
+        window.scrollTo(0, 0);
+        contents.scrollTo(0, 0);
+    }
+    isLoaded = true;
 }

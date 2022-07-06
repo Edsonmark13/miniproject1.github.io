@@ -116,6 +116,7 @@ function recommendHightLight(data){
 result +='</div>';
 finalRecommendResults += result;
 }
+
 function recommend(data, i){
   let result = '<div class=" col mentor-container shadow text-center">';
   result+='<div class="row mt-3">';
